@@ -55,6 +55,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\AllGiven.cs" />
     <Compile Include="StepDefinitions\AllThen.cs" />
@@ -66,7 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
-    <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
