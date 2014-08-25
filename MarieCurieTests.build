@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- ############################################################################
+##  
+##  
+##  
+##  This script can be run from the commandline with msbuild to test the project
+##  runs successfully before checking in. This allows us to debug the build locally
+##  
+#################################################################################  -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="4.0"
+         DefaultTargets="Run">
+
+  <!-- Define variables that can be passed in (and system variable defaults)  -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">DEBUG</Configuration>
+    <VS100COMNTOOLS Condition=" '$(VS100COMNTOOLS)' == '' ">C:\Program Files\Microsoft Visual Studio 10.0\Common7\Tools\</VS100COMNTOOLS>
+    <ExtensionTasksPath>.\</ExtensionTasksPath>
+  </PropertyGroup>
+
+  <!-- Define constants - use this to extract path info  -->
+  <ItemGroup>
+    <BuildArtifacts Include="BuildArtifacts\"/>
+    <DeploymentPackages Include="BuildArtifacts\DeploymentPackages\"/>
+    <SolutionFile Include="MarieCurieTests.sln"/>
+  </ItemGroup>
+
+  <!-- Step 1) Clean build artifacts folder -->
+  <Target Name="Clean">
+    <RemoveDir Directories="@(BuildArtifacts)"/>
+  </Target>
+
+  <!-- Step 2) recreate artifacts folders -->
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="@(BuildArtifacts)"/>
+  </Target>
+
+  <!-- Step 3) Regenerate test code from specflow features -->
+  <Target Name="GenerateFeatures" DependsOnTargets="Init">
+    <Message Text="Generating features with Specflow.exe generateAll" />
+    <Exec Command="C:\specflow\SpecFlow.1.9.0\tools\Specflow.exe generateAll MarieCurieTests\MarieCurieTests.csproj /verbose" />
+    <!--/force"-->
+  </Target>
+
+  <!-- Step 4) COMPILE SOLUTION -->
+  <Target Name="Compile" DependsOnTargets="GenerateFeatures">
+    <MSBuild Projects="MarieCurieTests\MarieCurieTests.csproj" Targets="Build" Properties="Configuration=$(Configuration)"/>
+  </Target>
+
+  <!-- Step 6) RUN TESTS -->
+  <Target Name="RunFeatureTests" DependsOnTargets="Compile">
+    <Exec ContinueOnError="true" Command='"$(VS100COMNTOOLS)..\IDE\mstest.exe" /testsettings:Local.Testsettings /testcontainer:MarieCurieTests\bin\$(Configuration)\MarieCurieTests.dll /resultsfile:@(BuildArtifacts)TestResults.trx' >
+      <!--Grab the exit code of the process-->
+      <Output TaskParameter="exitcode" PropertyName="ExitCode" />
+    </Exec>
+
+    <!--output a message to show return status-->
+    <Message Text="DEBUG - test exit code: $(ExitCode)"/>
+
+    <PropertyGroup>
+      <!--Create the FailedBuild property if ExitCode != 0 and set it to True-->
+      <!--This will be used later on to fail the build-->
+      <FailBuild Condition="$(ExitCode) != 0">True</FailBuild>
+    </PropertyGroup>
+  </Target>
+
+  <!-- Step 7) Generate reports -->
+  <Target Name="GenerateReports" DependsOnTargets="RunFeatureTests">
+    <Exec Command='C:\specflow\SpecFlow.1.9.0\tools\Specflow.exe mstestexecutionreport MarieCurieTests\MarieCurieTests.csproj /testResult:@(BuildArtifacts)TestResults.trx /out:@(BuildArtifacts)AcceptanceTestResult.html' />
+  </Target>
+
+  <!-- Step 8) Generate Reports -->
+  <Target Name="Run" DependsOnTargets="GenerateReports">
+    <Message Text="##teamcity[importData type='mstest' path='@(BuildArtifacts)TestResults.trx']"></Message>
+    <Message Text="Finished" />
+
+    <!--Fail the build.  This runs after the RunTests target has completed-->
+    <!--If condition passes it will out put the test assemblies that failed-->
+    <Error Condition="$(FailBuild) == 'True'" Text="Unit tests failed on a previous step - check report for details "/>
+  </Target>
+
+</Project>
