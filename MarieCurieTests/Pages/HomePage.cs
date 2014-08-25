@@ -7,5 +7,7 @@ namespace MarieCurieTests.Pages
 {
     class HomePage
     {
+        
+
     }
 }
