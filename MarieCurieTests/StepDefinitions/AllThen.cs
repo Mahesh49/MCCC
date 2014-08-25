@@ -5,6 +5,7 @@ using System.Text;
 using TechTalk.SpecFlow;
 using MarieCurieTests.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 
 namespace MarieCurieTests.StepDefinitions
 {
@@ -13,9 +14,13 @@ namespace MarieCurieTests.StepDefinitions
     {
 
         public HomePage homepage;
+        public IWebDriver driver;
+        public BasePage basepage;
         public AllThen()
         {
             homepage = new HomePage();
+            basepage = new BasePage();
+            driver = WebBrowser.Current;
 
         }
 
@@ -23,6 +28,9 @@ namespace MarieCurieTests.StepDefinitions
         public void ThenIShouldSeeHomepage()
         {
             Assert.AreEqual("Marie Curie Cancer Care", homepage.getHomePageTitle());
+            //basepage.GetOnlineShop();
+            //driver.Navigate().Back();
+            //basepage.GetDonationPage();
         }
 
 

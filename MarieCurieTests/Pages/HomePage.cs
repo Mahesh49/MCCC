@@ -10,27 +10,27 @@ namespace MarieCurieTests.Pages
 {
     public class HomePage
     {
+        public BasePage basepage;
+        public IWebDriver driver;
 
-        static IWebDriver driver;
-
-       
-        public void getHomePage()
+        public HomePage()
         {
-            driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://www.mariecurie.org.uk/");
+            driver = WebBrowser.Current;
+            basepage = new BasePage();
+
         }
 
+       
+        
         public string getHomePageTitle()
         {
+            driver.FindElement(By.XPath(".//*[@id='ctl00_ctl00_LoginStatus_LoggedInStatus_LoginLink']/img")).Click();
+            basepage.NavigateToHomePage();
             return driver.Title;
         }
 
 
-       [AfterScenario]
-        public void close()
-        {
-            driver.Quit();
-        }
+       
 
     }
 }

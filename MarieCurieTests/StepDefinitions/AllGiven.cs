@@ -14,16 +14,20 @@ namespace MarieCurieTests.StepDefinitions
 
         public HomePage homepage;
         public IWebDriver driver;
+        public BasePage basepage;
+
 
         public AllGiven()
         {
             homepage = new HomePage();
+            basepage = new BasePage();
         }
 
         [Given(@"I enter homepage url")]
         public void GivenIEnterHomepageUrl()
         {
-            homepage.getHomePage();
+            
+            basepage.getHomePage();
         }
 
         

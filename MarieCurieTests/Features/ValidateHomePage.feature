@@ -1,7 +1,5 @@
 ﻿Feature: ValidateHomePage
-	
 
-@mytag
 
 
 
