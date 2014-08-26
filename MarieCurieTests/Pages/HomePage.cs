@@ -5,27 +5,21 @@ using System.Text;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using TechTalk.SpecFlow;
+using MarieCurieTests.CommonPages;
 
 namespace MarieCurieTests.Pages
 {
-    public class HomePage
+    public class HomePage:BasePage
     {
-        public BasePage basepage;
-        public IWebDriver driver;
+        public HomePage(IWebDriver driver) : base(driver) { }
 
-        public HomePage()
-        {
-            driver = WebBrowser.Current;
-            basepage = new BasePage();
-
-        }
-
+              
        
         
         public string getHomePageTitle()
         {
-            driver.FindElement(By.XPath(".//*[@id='ctl00_ctl00_LoginStatus_LoggedInStatus_LoginLink']/img")).Click();
-            basepage.NavigateToHomePage();
+            //driver.FindElement(By.XPath(".//*[@id='ctl00_ctl00_LoginStatus_LoggedInStatus_LoginLink']/img")).Click();
+            //NavigateToHomePage();
             return driver.Title;
         }
 

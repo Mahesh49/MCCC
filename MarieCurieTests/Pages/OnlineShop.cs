@@ -3,22 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using OpenQA.Selenium;
+using MarieCurieTests.CommonPages;
 
 namespace MarieCurieTests.Pages
 {
-   public class OnlineShop
+   public class OnlineShop:BasePage
     {
 
 
-        public BasePage basepage;
-        public IWebDriver driver;
+        
 
-        public OnlineShop()
-        {
-            driver = WebBrowser.Current;
-            basepage = new BasePage();
-
-        }
+        public OnlineShop(IWebDriver driver):base(driver) { }
 
        
 

@@ -7,7 +7,16 @@ using TechTalk.SpecFlow;
 namespace MarieCurieTests.StepDefinitions
 {
     [Binding]
-    public class AllWhen
+    public class SharedSteps : CommonSteps
     {
+
+
+        [AfterScenario]
+        public void CloseBrowser()
+        {
+
+            driver.Close();
+
+        }
     }
 }

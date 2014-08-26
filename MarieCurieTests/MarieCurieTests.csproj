@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -60,11 +61,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ValidateHomePage.feature</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="CommonPages\BasePage.cs" />
+    <Compile Include="GetDriver.cs" />
     <Compile Include="Pages\DonatePage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OnlineShop.cs" />
-    <Compile Include="WebBrowser.cs" />
+    <Compile Include="StepDefinitions\CommonSteps.cs" />
+    <Compile Include="StepDefinitions\SharedSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\AllGiven.cs" />
     <Compile Include="StepDefinitions\AllThen.cs" />
