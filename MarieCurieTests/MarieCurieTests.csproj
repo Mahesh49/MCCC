@@ -74,7 +74,9 @@
     <Compile Include="StepDefinitions\AllWhen.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Features\ValidateHomePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ValidateHomePage.feature.cs</LastGenOutput>
