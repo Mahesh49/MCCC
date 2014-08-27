@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="985ac919-0d38-49fd-9bbc-378362f005d6" name="Mahesh@MAHESH-PC 2014-08-27 21:28:45" runUser="Mahesh-PC\Mahesh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="af669413-876e-4c9c-addc-5ada33b1b9d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mahesh_MAHESH-PC 2014-08-27 21_28_45">
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.WebDriver.2.42.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.Support.2.42.0\lib\net40\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-27T21:28:45.3607630+01:00" queuing="2014-08-27T21:28:46.9916537+01:00" start="2014-08-27T21:28:47.2186666+01:00" finish="2014-08-27T21:29:24.3861890+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="5" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="MAHESH-PC" outcome="Error" timestamp="2014-08-27T21:29:24.3831889+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Donation_MakeAOne_OffDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="bde68202-514c-5b5f-d89c-43cc7206a39f">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="c67d82c5-78d0-4b45-a927-f6658e796d6c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeAOne_OffDonation" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_123Gmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="c8c7b80d-5a20-9d98-f709-9bce4e95f560">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="093e8917-9d2e-4644-a435-caa146036745" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>asdrfd</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_123Gmail_Com" />
+    </UnitTest>
+    <UnitTest name="ValidatingHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="9edd59c7-39eb-d548-62ec-967b9e836d13">
+      <Description>Validating Home Page</Description>
+      <Execution id="7670d4da-bbe5-474b-b308-4f8324180c3a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePage</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingHomePage" />
+    </UnitTest>
+    <UnitTest name="Donation_MakeARegularDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="838a989b-3c8e-cdc6-cf57-1d4ff66afa82">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="eafb199b-961e-43a6-82b7-830dc7da3d52" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeARegularDonation" />
+    </UnitTest>
+    <UnitTest name="ValidatingTabContentOnHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="0b7d4888-3690-0dd8-8390-a4d6ebe9e687">
+      <Description>Validating Tab content on Home Page</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="f19e700d-77f9-418c-ae21-6badba5527d6" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePageTabs</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageTabsFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingTabContentOnHomePage" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_AbcGmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="e950277a-96dc-0149-e631-9a6a18b0a887">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="69519c6c-55f9-43d1-90e7-e1e9e35d377e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>12345</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_AbcGmail_Com" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" executionId="f19e700d-77f9-418c-ae21-6badba5527d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" executionId="093e8917-9d2e-4644-a435-caa146036745" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e950277a-96dc-0149-e631-9a6a18b0a887" executionId="69519c6c-55f9-43d1-90e7-e1e9e35d377e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9edd59c7-39eb-d548-62ec-967b9e836d13" executionId="7670d4da-bbe5-474b-b308-4f8324180c3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" executionId="eafb199b-961e-43a6-82b7-830dc7da3d52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde68202-514c-5b5f-d89c-43cc7206a39f" executionId="c67d82c5-78d0-4b45-a927-f6658e796d6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f19e700d-77f9-418c-ae21-6badba5527d6" testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" testName="ValidatingTabContentOnHomePage" computerName="MAHESH-PC" duration="00:00:36.9535102" startTime="2014-08-27T21:28:47.4316788+01:00" endTime="2014-08-27T21:29:24.3851890+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f19e700d-77f9-418c-ae21-6badba5527d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="093e8917-9d2e-4644-a435-caa146036745" testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" testName="InvaliLogin_123Gmail_Com" computerName="MAHESH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="093e8917-9d2e-4644-a435-caa146036745">
+    </UnitTestResult>
+    <UnitTestResult executionId="69519c6c-55f9-43d1-90e7-e1e9e35d377e" testId="e950277a-96dc-0149-e631-9a6a18b0a887" testName="InvaliLogin_AbcGmail_Com" computerName="MAHESH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69519c6c-55f9-43d1-90e7-e1e9e35d377e">
+    </UnitTestResult>
+    <UnitTestResult executionId="7670d4da-bbe5-474b-b308-4f8324180c3a" testId="9edd59c7-39eb-d548-62ec-967b9e836d13" testName="ValidatingHomePage" computerName="MAHESH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7670d4da-bbe5-474b-b308-4f8324180c3a">
+    </UnitTestResult>
+    <UnitTestResult executionId="eafb199b-961e-43a6-82b7-830dc7da3d52" testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" testName="Donation_MakeARegularDonation" computerName="MAHESH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eafb199b-961e-43a6-82b7-830dc7da3d52">
+    </UnitTestResult>
+    <UnitTestResult executionId="c67d82c5-78d0-4b45-a927-f6658e796d6c" testId="bde68202-514c-5b5f-d89c-43cc7206a39f" testName="Donation_MakeAOne_OffDonation" computerName="MAHESH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c67d82c5-78d0-4b45-a927-f6658e796d6c">
+    </UnitTestResult>
+  </Results>
+</TestRun>

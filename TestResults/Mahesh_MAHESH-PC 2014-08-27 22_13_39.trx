@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="75458736-6669-4dfc-a095-09fd67634676" name="Mahesh@MAHESH-PC 2014-08-27 22:13:39" runUser="Mahesh-PC\Mahesh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="af669413-876e-4c9c-addc-5ada33b1b9d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mahesh_MAHESH-PC 2014-08-27 22_13_39">
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.WebDriver.2.42.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.Support.2.42.0\lib\net40\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-27T22:13:39.9456281+01:00" queuing="2014-08-27T22:13:41.6957282+01:00" start="2014-08-27T22:13:41.8317360+01:00" finish="2014-08-27T22:14:23.3423074+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Donation_MakeARegularDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="838a989b-3c8e-cdc6-cf57-1d4ff66afa82">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="763c4325-51d0-4daf-9603-27b46fd1abc4" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeARegularDonation" />
+    </UnitTest>
+    <UnitTest name="Donation_MakeAOne_OffDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="bde68202-514c-5b5f-d89c-43cc7206a39f">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="97f9abb6-4807-4952-9f8d-382c12d4cfb4" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeAOne_OffDonation" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" executionId="763c4325-51d0-4daf-9603-27b46fd1abc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde68202-514c-5b5f-d89c-43cc7206a39f" executionId="97f9abb6-4807-4952-9f8d-382c12d4cfb4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="763c4325-51d0-4daf-9603-27b46fd1abc4" testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" testName="Donation_MakeARegularDonation" computerName="MAHESH-PC" duration="00:00:31.7262290" startTime="2014-08-27T22:13:41.9137407+01:00" endTime="2014-08-27T22:14:14.8918241+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="763c4325-51d0-4daf-9603-27b46fd1abc4">
+      <Output>
+        <StdOut>Given I am on Donation Page
+-&gt; done: AllGiven.GivenIAmOnDonationPage() (13.1s)
+When I choose donation type "Make a regular donation"
+-&gt; done: AllWhen.WhenIChooseDonationType("Make a regular do...") (2.1s)
+Then I should see relevent pages "Make a donation"
+-&gt; done: AllThen.ThenIShouldSeeReleventPages("Make a donation") (16.4s)</StdOut>
+        <DebugTrace>1
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="97f9abb6-4807-4952-9f8d-382c12d4cfb4" testId="bde68202-514c-5b5f-d89c-43cc7206a39f" testName="Donation_MakeAOne_OffDonation" computerName="MAHESH-PC" duration="00:00:06.4888651" startTime="2014-08-27T22:14:14.9108252+01:00" endTime="2014-08-27T22:14:21.4261978+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97f9abb6-4807-4952-9f8d-382c12d4cfb4">
+      <Output>
+        <StdOut>Given I am on Donation Page
+-&gt; done: AllGiven.GivenIAmOnDonationPage() (2.3s)
+When I choose donation type "Make a one-off donation"
+-&gt; done: AllWhen.WhenIChooseDonationType("Make a one-off do...") (1.9s)
+Then I should see relevent pages "Make a one-off donation"
+-&gt; done: AllThen.ThenIShouldSeeReleventPages("Make a one-off do...") (2.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

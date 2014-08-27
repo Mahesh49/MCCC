@@ -56,12 +56,28 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonPages\CommonMethods.cs" />
+    <Compile Include="Features\InValidLogin.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InValidLogin.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MakeDonation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MakeDonation.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\ValidateHomePage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ValidateHomePage.feature</DependentUpon>
     </Compile>
     <Compile Include="CommonPages\BasePage.cs" />
+    <Compile Include="Features\ValidateHomePageTabs.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidateHomePageTabs.feature</DependentUpon>
+    </Compile>
     <Compile Include="GetDriver.cs" />
     <Compile Include="Pages\DonatePage.cs" />
     <Compile Include="Pages\HomePage.cs" />
@@ -77,9 +93,21 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Features\InValidLogin.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>InValidLogin.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\MakeDonation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MakeDonation.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\ValidateHomePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ValidateHomePage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ValidateHomePageTabs.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ValidateHomePageTabs.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

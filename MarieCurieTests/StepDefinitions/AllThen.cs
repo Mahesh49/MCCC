@@ -24,6 +24,31 @@ namespace MarieCurieTests.StepDefinitions
            
         }
 
+        [Then(@"I should see tab contents with one active at any time")]
+        public void ThenIShouldSeeTabContentsWithOneActiveAtAnyTime()
+        {
+            Assert.IsTrue(homepage.isTabOptionsDisplayed());
+        }
+
+        [Then(@"I shoud see error message being displayed")]
+        public void ThenIShoudSeeErrorMessageBeingDisplayed()
+        {
+            string message = "Your username and password combination were not correct, please check both and try again";
+            Assert.AreEqual(message, onlineshop.getInvaliErrorMessage());
+        }
+
+        [Then(@"I should see relevent pages ""(.*)""")]
+        public void ThenIShouldSeeReleventPages(string p0)
+        {
+            if (p0 == "Make a donation")
+            {
+                Assert.AreEqual("Make a donation", donatepage.getDonationText());
+            }
+            else
+                Assert.AreEqual("Make a one-off donation",donatepage.getDonationText());
+        }
+
+
 
 
        

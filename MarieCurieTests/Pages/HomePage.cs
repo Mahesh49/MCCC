@@ -11,6 +11,8 @@ namespace MarieCurieTests.Pages
 {
     public class HomePage:BasePage
     {
+
+        
         public HomePage(IWebDriver driver) : base(driver) { }
 
               
@@ -18,9 +20,24 @@ namespace MarieCurieTests.Pages
         
         public string getHomePageTitle()
         {
-            //driver.FindElement(By.XPath(".//*[@id='ctl00_ctl00_LoginStatus_LoggedInStatus_LoginLink']/img")).Click();
-            //NavigateToHomePage();
             return driver.Title;
+        }
+
+        public bool isTabOptionsDisplayed()
+        {
+            bool b=false;
+            IList<IWebElement> tablist = driver.FindElements(By.ClassName("tabs"));
+
+            foreach (IWebElement ele in tablist)
+            {
+                if (ele.Enabled)
+                    b = true;
+                else
+                    b = false;
+            }
+            return b;
+
+
         }
 
 

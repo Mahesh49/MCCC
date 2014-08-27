@@ -17,9 +17,24 @@ namespace MarieCurieTests.StepDefinitions
         [Given(@"I enter homepage url")]
         public void GivenIEnterHomepageUrl()
         {
-            
             homepage.NavigateToHomePage();
         }
+
+        [Given(@"I am on OnlineShop page")]
+        public void GivenIAmOnOnlineShopPage()
+        {
+            basepage.GetOnlineShop();
+        }
+
+
+        [Given(@"I am on Donation Page")]
+        public void GivenIAmOnDonationPage()
+        {
+            basepage.GetDonationPage();
+        }
+
+
+
 
     }
 }

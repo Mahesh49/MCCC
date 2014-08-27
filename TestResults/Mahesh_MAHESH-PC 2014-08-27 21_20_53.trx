@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b5d5029f-c15d-4722-97d7-667ec35f6c85" name="Mahesh@MAHESH-PC 2014-08-27 21:20:53" runUser="Mahesh-PC\Mahesh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="af669413-876e-4c9c-addc-5ada33b1b9d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mahesh_MAHESH-PC 2014-08-27 21_20_53">
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.WebDriver.2.42.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.Support.2.42.0\lib\net40\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-27T21:20:53.3660188+01:00" queuing="2014-08-27T21:20:54.7510980+01:00" start="2014-08-27T21:20:54.9911118+01:00" finish="2014-08-27T21:20:56.8304152+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" error="0" failed="6" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Donation_MakeAOne_OffDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="bde68202-514c-5b5f-d89c-43cc7206a39f">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="6dbaca2b-24fb-44fd-8b67-466c5f746e49" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeAOne_OffDonation" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_123Gmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="c8c7b80d-5a20-9d98-f709-9bce4e95f560">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="a280348e-b6b9-46e4-b7c3-301d11c5eabe" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>asdrfd</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_123Gmail_Com" />
+    </UnitTest>
+    <UnitTest name="ValidatingHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="9edd59c7-39eb-d548-62ec-967b9e836d13">
+      <Description>Validating Home Page</Description>
+      <Execution id="c23592ae-4f2b-4432-9fb9-3d147b3cfb44" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePage</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingHomePage" />
+    </UnitTest>
+    <UnitTest name="Donation_MakeARegularDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="838a989b-3c8e-cdc6-cf57-1d4ff66afa82">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="d45b5c6d-60fa-4f2d-8916-891edac0afbf" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeARegularDonation" />
+    </UnitTest>
+    <UnitTest name="ValidatingTabContentOnHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="0b7d4888-3690-0dd8-8390-a4d6ebe9e687">
+      <Description>Validating Tab content on Home Page</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="8e17090c-ac2c-4792-90f1-381671954428" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePageTabs</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageTabsFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingTabContentOnHomePage" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_AbcGmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="e950277a-96dc-0149-e631-9a6a18b0a887">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="36f19205-c755-44b1-a0e0-ad3fa38b67bf" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>12345</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_AbcGmail_Com" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" executionId="8e17090c-ac2c-4792-90f1-381671954428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" executionId="a280348e-b6b9-46e4-b7c3-301d11c5eabe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e950277a-96dc-0149-e631-9a6a18b0a887" executionId="36f19205-c755-44b1-a0e0-ad3fa38b67bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9edd59c7-39eb-d548-62ec-967b9e836d13" executionId="c23592ae-4f2b-4432-9fb9-3d147b3cfb44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" executionId="d45b5c6d-60fa-4f2d-8916-891edac0afbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde68202-514c-5b5f-d89c-43cc7206a39f" executionId="6dbaca2b-24fb-44fd-8b67-466c5f746e49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8e17090c-ac2c-4792-90f1-381671954428" testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" testName="ValidatingTabContentOnHomePage" computerName="MAHESH-PC" startTime="2014-08-27T21:20:55.2111243+01:00" endTime="2014-08-27T21:20:56.4101929+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e17090c-ac2c-4792-90f1-381671954428">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.ValidateHomePageTabsFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.ValidateHomePageTabsFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\ValidateHomePageTabs.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a280348e-b6b9-46e4-b7c3-301d11c5eabe" testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" testName="InvaliLogin_123Gmail_Com" computerName="MAHESH-PC" startTime="2014-08-27T21:20:56.4341943+01:00" endTime="2014-08-27T21:20:56.4963961+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a280348e-b6b9-46e4-b7c3-301d11c5eabe">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.InValidLoginFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.InValidLoginFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\InValidLogin.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="36f19205-c755-44b1-a0e0-ad3fa38b67bf" testId="e950277a-96dc-0149-e631-9a6a18b0a887" testName="InvaliLogin_AbcGmail_Com" computerName="MAHESH-PC" startTime="2014-08-27T21:20:56.5143972+01:00" endTime="2014-08-27T21:20:56.5413987+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36f19205-c755-44b1-a0e0-ad3fa38b67bf">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.InValidLoginFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.InValidLoginFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\InValidLogin.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c23592ae-4f2b-4432-9fb9-3d147b3cfb44" testId="9edd59c7-39eb-d548-62ec-967b9e836d13" testName="ValidatingHomePage" computerName="MAHESH-PC" startTime="2014-08-27T21:20:56.5583997+01:00" endTime="2014-08-27T21:20:56.6094026+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c23592ae-4f2b-4432-9fb9-3d147b3cfb44">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.ValidateHomePageFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.ValidateHomePageFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\ValidateHomePage.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d45b5c6d-60fa-4f2d-8916-891edac0afbf" testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" testName="Donation_MakeARegularDonation" computerName="MAHESH-PC" startTime="2014-08-27T21:20:56.6214033+01:00" endTime="2014-08-27T21:20:56.6674059+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d45b5c6d-60fa-4f2d-8916-891edac0afbf">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.MakeDonationFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.MakeDonationFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\MakeDonation.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6dbaca2b-24fb-44fd-8b67-466c5f746e49" testId="bde68202-514c-5b5f-d89c-43cc7206a39f" testName="Donation_MakeAOne_OffDonation" computerName="MAHESH-PC" startTime="2014-08-27T21:20:56.6784065+01:00" endTime="2014-08-27T21:20:56.7014078+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dbaca2b-24fb-44fd-8b67-466c5f746e49">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method MarieCurieTests.Features.MakeDonationFeature.FeatureSetup threw exception. TechTalk.SpecFlow.BindingException: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SharedSteps.CloseBrowser().</Message>
+          <StackTrace>    at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.&lt;&gt;c__DisplayClasse.&lt;ProcessHookAttribute&gt;b__c(BindingScope scope)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ApplyForScope(BindingScope[] scopes, Action`1 action)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes)
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type)
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Initialize(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.TestRunner.InitializeTestRunner(Assembly[] bindingAssemblies)
+   at TechTalk.SpecFlow.Infrastructure.TestRunnerFactory.Create(Assembly testAssembly)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(TestRunnerKey key)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Boolean async)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner()
+   at MarieCurieTests.Features.MakeDonationFeature.FeatureSetup(TestContext testContext) in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\MakeDonation.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -12,6 +12,16 @@ namespace MarieCurieTests.CommonPages
     {
 
        public IWebDriver driver;
+
+       [FindsBy(How = How.Id)]
+       [CacheLookup]     //keeps the element in driver cache
+       private IWebElement Logo;  //Id=Logo ,Webelement name could be anything
+
+       [FindsBy(How = How.Id,Using="shopping")]
+       private IWebElement Shopping;
+
+       [FindsBy(How = How.Id)]
+       private IWebElement donate;
        
 
        public BasePage(IWebDriver driver)
@@ -23,17 +33,20 @@ namespace MarieCurieTests.CommonPages
        
        public void NavigateToHomePage()
        {
-           driver.FindElement(By.XPath(".//*[@id='Logo']/a/span")).Click();
+                          
+           Logo.Click();
+
        }
 
        public void GetOnlineShop()
        {
-           driver.FindElement(By.XPath("//a[contains(.,'Online shop')]")).Click();
+           Shopping.Click();
        }
 
        public void GetDonationPage()
        {
-           driver.FindElement(By.XPath("//a[contains(.,'Donate')]")).Click();
+           NavigateToHomePage();
+           donate.Click();
        }
    
 
