@@ -34,6 +34,15 @@ namespace MarieCurieTests.StepDefinitions
         }
 
 
+        [Given(@"I am on Shop Page")]
+        public void GivenIAmOnShopPage()
+        {
+            driver.Navigate().GoToUrl("https://www.mariecurie.org.uk/fundraising-volunteering/volunteer/ways-to-volunteer/volunteer-marie-curie-shop/search-detail/?type=shop&key=E4338&dist=10.7");
+
+        }
+
+
+
 
 
     }

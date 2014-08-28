@@ -8,11 +8,12 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
 using TechTalk.SpecFlow;
+using OpenQA.Selenium.Internal;
 
 namespace MarieCurieTests
 {
    // [Binding]
-    public class GetDriver
+    public static class GetDriver
     {
         public static IWebDriver driver;
 
@@ -42,5 +43,17 @@ namespace MarieCurieTests
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
             return driver;
         }
+
+        //is Image visible
+        public static bool IsImageVisible(this IWebElement image)
+        {
+            var driver = ((IWrapsDriver)image).WrappedDriver;
+            var script = ConfigurationManager.AppSettings["Browser"] == "firefox"
+                       ? "return arguments[0].complete"
+                       : "return (typeof arguments[0].naturalWidth!=\"undefined\"" +
+                       " && arguments[0].naturalWidth>0)";
+            return (bool)((IJavaScriptExecutor)driver).ExecuteScript(script, image);
+        }
+
     }
 }

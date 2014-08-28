@@ -62,6 +62,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InValidLogin.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\is Image displayed.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>is Image displayed.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\MakeDonation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +102,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>InValidLogin.feature.cs</LastGenOutput>
     </None>
+    <None Include="Features\is Image displayed.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>is Image displayed.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\MakeDonation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MakeDonation.feature.cs</LastGenOutput>
@@ -111,7 +120,9 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Screeshots\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="653011ae-37c0-47e4-b4ea-f698f21961e8" name="Mahesh@MAHESH-PC 2014-08-28 21:27:12" runUser="Mahesh-PC\Mahesh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="af669413-876e-4c9c-addc-5ada33b1b9d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mahesh_MAHESH-PC 2014-08-28 21_27_12">
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.WebDriver.2.42.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\Selenium.Support.2.42.0\lib\net40\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-28T21:27:12.5052787+01:00" queuing="2014-08-28T21:27:15.2284344+01:00" start="2014-08-28T21:27:15.4814489+01:00" finish="2014-08-28T21:28:44.2685272+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="6" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Donation_MakeAOne_OffDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="bde68202-514c-5b5f-d89c-43cc7206a39f">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="e8187479-868a-433a-bbc3-e495a75fbc2e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a one-off donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeAOne_OffDonation" />
+    </UnitTest>
+    <UnitTest name="ImagesAreRenderedProperly" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="ff389ca3-d528-90fa-bd53-3485174bbf70">
+      <Description>Images are rendered properly</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="fd7c92b9-0ab5-4539-ad35-fd0f045e9ada" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>is Image displayed</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.IsImageDisplayedFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImagesAreRenderedProperly" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_123Gmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="c8c7b80d-5a20-9d98-f709-9bce4e95f560">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="c44744b3-9985-4e8b-a44d-87efae14bc52" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>asdrfd</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>123@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_123Gmail_Com" />
+    </UnitTest>
+    <UnitTest name="ValidatingHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="9edd59c7-39eb-d548-62ec-967b9e836d13">
+      <Description>Validating Home Page</Description>
+      <Execution id="3dffbd86-ba3a-44fe-b59a-d104951c308a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePage</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingHomePage" />
+    </UnitTest>
+    <UnitTest name="Donation_MakeARegularDonation" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="838a989b-3c8e-cdc6-cf57-1d4ff66afa82">
+      <Description>Donation</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="00babde8-5620-43c9-a841-0b0324c1d9c2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MakeDonation</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Donation Type</Key>
+          <Value>Make a regular donation</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PageHeader</Key>
+          <Value>Make a donation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.MakeDonationFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Donation_MakeARegularDonation" />
+    </UnitTest>
+    <UnitTest name="ValidatingTabContentOnHomePage" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="0b7d4888-3690-0dd8-8390-a4d6ebe9e687">
+      <Description>Validating Tab content on Home Page</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="224ade34-3002-4845-8ec0-0d554fd545b8" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>ValidateHomePageTabs</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.ValidateHomePageTabsFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingTabContentOnHomePage" />
+    </UnitTest>
+    <UnitTest name="InvaliLogin_AbcGmail_Com" storage="c:\users\mahesh\documents\visual studio 2010\projects\mariecurietests\mariecurietests\bin\debug\mariecurietests.dll" id="e950277a-96dc-0149-e631-9a6a18b0a887">
+      <Description>Invali Login</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="42a72869-c42e-456e-bccb-894335d7933a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>InValidLogin</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:password</Key>
+          <Value>12345</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Username</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>abc@gmail.com</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/MarieCurieTests/bin/Debug/MarieCurieTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarieCurieTests.Features.InValidLoginFeature, MarieCurieTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvaliLogin_AbcGmail_Com" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" executionId="224ade34-3002-4845-8ec0-0d554fd545b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff389ca3-d528-90fa-bd53-3485174bbf70" executionId="fd7c92b9-0ab5-4539-ad35-fd0f045e9ada" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" executionId="c44744b3-9985-4e8b-a44d-87efae14bc52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e950277a-96dc-0149-e631-9a6a18b0a887" executionId="42a72869-c42e-456e-bccb-894335d7933a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9edd59c7-39eb-d548-62ec-967b9e836d13" executionId="3dffbd86-ba3a-44fe-b59a-d104951c308a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" executionId="00babde8-5620-43c9-a841-0b0324c1d9c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde68202-514c-5b5f-d89c-43cc7206a39f" executionId="e8187479-868a-433a-bbc3-e495a75fbc2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="224ade34-3002-4845-8ec0-0d554fd545b8" testId="0b7d4888-3690-0dd8-8390-a4d6ebe9e687" testName="ValidatingTabContentOnHomePage" computerName="MAHESH-PC" duration="00:00:17.0539144" startTime="2014-08-28T21:27:15.6184567+01:00" endTime="2014-08-28T21:27:33.9385046+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="224ade34-3002-4845-8ec0-0d554fd545b8">
+      <Output>
+        <StdOut>Given I enter homepage url
+-&gt; done: AllGiven.GivenIEnterHomepageUrl() (13.0s)
+Then I should see tab contents with one active at any time
+-&gt; done: AllThen.ThenIShouldSeeTabContentsWithOneActiveAtAnyTime() (1.5s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_ValidateHomePageTabs_Validating Tab content on Home Page_20140828_212731_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_ValidateHomePageTabs_Validating Tab content on Home Page_20140828_212731_screenshot.png</StdOut>
+        <DebugTrace>1
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd7c92b9-0ab5-4539-ad35-fd0f045e9ada" testId="ff389ca3-d528-90fa-bd53-3485174bbf70" testName="ImagesAreRenderedProperly" computerName="MAHESH-PC" duration="00:00:23.2040172" startTime="2014-08-28T21:27:33.9655061+01:00" endTime="2014-08-28T21:27:57.2468378+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd7c92b9-0ab5-4539-ad35-fd0f045e9ada">
+      <Output>
+        <StdOut>Given I am on Shop Page
+-&gt; done: AllGiven.GivenIAmOnShopPage() (4.4s)
+Then I should see images are displayed
+-&gt; error: Assert.IsFalse failed. 
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_is Image displayed_Images are rendered properly_20140828_212756_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_is Image displayed_Images are rendered properly_20140828_212756_screenshot.png</StdOut>
+        <DebugTrace>True
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsFalse failed. </Message>
+          <StackTrace>   at MarieCurieTests.StepDefinitions.AllThen.ThenIShouldSeeImagesAreDisplayed() in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\StepDefinitions\AllThen.cs:line 65
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at MarieCurieTests.Features.IsImageDisplayedFeature.ScenarioCleanup() in C:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\is Image displayed.feature.cs:line 0
+   at MarieCurieTests.Features.IsImageDisplayedFeature.ImagesAreRenderedProperly() in c:\Users\Mahesh\Documents\Visual Studio 2010\Projects\MarieCurieTests\MarieCurieTests\Features\is Image displayed.feature:line 8
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c44744b3-9985-4e8b-a44d-87efae14bc52" testId="c8c7b80d-5a20-9d98-f709-9bce4e95f560" testName="InvaliLogin_123Gmail_Com" computerName="MAHESH-PC" duration="00:00:09.2647268" startTime="2014-08-28T21:27:57.3048411+01:00" endTime="2014-08-28T21:28:06.7683824+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c44744b3-9985-4e8b-a44d-87efae14bc52">
+      <Output>
+        <StdOut>Given I am on OnlineShop page
+-&gt; done: AllGiven.GivenIAmOnOnlineShopPage() (0.2s)
+When I enter invalid username "123@gmail.com" and password "asdrfd"
+-&gt; done: AllWhen.WhenIEnterInvalidUsernameAndPassword("123@gmail.com", "asdrfd") (6.0s)
+Then I shoud see error message being displayed
+-&gt; done: AllThen.ThenIShoudSeeErrorMessageBeingDisplayed() (2.5s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_InValidLogin_Invali Login_20140828_212806_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_InValidLogin_Invali Login_20140828_212806_screenshot.png</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42a72869-c42e-456e-bccb-894335d7933a" testId="e950277a-96dc-0149-e631-9a6a18b0a887" testName="InvaliLogin_AbcGmail_Com" computerName="MAHESH-PC" duration="00:00:08.7092426" startTime="2014-08-28T21:28:06.7883835+01:00" endTime="2014-08-28T21:28:15.5388840+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42a72869-c42e-456e-bccb-894335d7933a">
+      <Output>
+        <StdOut>Given I am on OnlineShop page
+-&gt; done: AllGiven.GivenIAmOnOnlineShopPage() (0.2s)
+When I enter invalid username "abc@gmail.com" and password "12345"
+-&gt; done: AllWhen.WhenIEnterInvalidUsernameAndPassword("abc@gmail.com", "12345") (5.0s)
+Then I shoud see error message being displayed
+-&gt; done: AllThen.ThenIShoudSeeErrorMessageBeingDisplayed() (2.7s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_InValidLogin_Invali Login_20140828_212814_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_InValidLogin_Invali Login_20140828_212814_screenshot.png</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3dffbd86-ba3a-44fe-b59a-d104951c308a" testId="9edd59c7-39eb-d548-62ec-967b9e836d13" testName="ValidatingHomePage" computerName="MAHESH-PC" duration="00:00:04.8789226" startTime="2014-08-28T21:28:15.5758861+01:00" endTime="2014-08-28T21:28:20.4781665+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3dffbd86-ba3a-44fe-b59a-d104951c308a">
+      <Output>
+        <StdOut>Given I enter homepage url
+-&gt; done: AllGiven.GivenIEnterHomepageUrl() (0.2s)
+Then I should see Homepage
+-&gt; done: AllThen.ThenIShouldSeeHomepage() (3.0s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_ValidateHomePage_Validating Home Page_20140828_212818_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_ValidateHomePage_Validating Home Page_20140828_212818_screenshot.png</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="00babde8-5620-43c9-a841-0b0324c1d9c2" testId="838a989b-3c8e-cdc6-cf57-1d4ff66afa82" testName="Donation_MakeARegularDonation" computerName="MAHESH-PC" duration="00:00:10.9362446" startTime="2014-08-28T21:28:20.4941674+01:00" endTime="2014-08-28T21:28:31.4547943+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00babde8-5620-43c9-a841-0b0324c1d9c2">
+      <Output>
+        <StdOut>Given I am on Donation Page
+-&gt; done: AllGiven.GivenIAmOnDonationPage() (2.4s)
+When I choose donation type "Make a regular donation"
+-&gt; done: AllWhen.WhenIChooseDonationType("Make a regular do...") (3.6s)
+Then I should see relevent pages "Make a donation"
+-&gt; done: AllThen.ThenIShouldSeeReleventPages("Make a donation") (2.9s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_MakeDonation_Donation_20140828_212829_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_MakeDonation_Donation_20140828_212829_screenshot.png</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e8187479-868a-433a-bbc3-e495a75fbc2e" testId="bde68202-514c-5b5f-d89c-43cc7206a39f" testName="Donation_MakeAOne_OffDonation" computerName="MAHESH-PC" duration="00:00:10.4279530" startTime="2014-08-28T21:28:31.4737954+01:00" endTime="2014-08-28T21:28:41.9213930+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8187479-868a-433a-bbc3-e495a75fbc2e">
+      <Output>
+        <StdOut>Given I am on Donation Page
+-&gt; done: AllGiven.GivenIAmOnDonationPage() (2.7s)
+When I choose donation type "Make a one-off donation"
+-&gt; done: AllWhen.WhenIChooseDonationType("Make a one-off do...") (3.3s)
+Then I should see relevent pages "Make a one-off donation"
+-&gt; done: AllThen.ThenIShouldSeeReleventPages("Make a one-off do...") (3.0s)
+Page source: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_MakeDonation_Donation_20140828_212840_source.html
+Screenshot: file:///C:/Users/Mahesh/Documents/Visual Studio 2010/Projects/MarieCurieTests/TestResults/Mahesh_MAHESH-PC 2014-08-28 21_27_12/Out/testresults/error_MakeDonation_Donation_20140828_212840_screenshot.png</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

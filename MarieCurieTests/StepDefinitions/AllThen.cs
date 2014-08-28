@@ -7,6 +7,7 @@ using MarieCurieTests.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using MarieCurieTests.CommonPages;
+using System.Diagnostics;
 
 namespace MarieCurieTests.StepDefinitions
 {
@@ -47,6 +48,25 @@ namespace MarieCurieTests.StepDefinitions
             else
                 Assert.AreEqual("Make a one-off donation",donatepage.getDonationText());
         }
+
+
+
+        [Then(@"I should see images are displayed")]
+        public void ThenIShouldSeeImagesAreDisplayed()
+        {
+            
+            bool b = driver.FindElement(By.Id("ctl00_ctl00_MainContent_GeneralContentPlaceHolder_imgMain")).IsImageVisible();
+
+            Debug.WriteLine(b);
+
+
+            
+
+            Assert.IsFalse(b);
+        }
+
+        
+
 
 
 

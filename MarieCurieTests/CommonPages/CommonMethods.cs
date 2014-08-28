@@ -8,10 +8,12 @@ using System.Threading;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using System.Globalization;
+using OpenQA.Selenium.Internal;
+using System.Configuration;
 
 namespace MarieCurieTests.CommonPages
 {
-    public class CommonMethods
+    public  class CommonMethods
     {
         public IWebDriver driver;
 
@@ -188,7 +190,7 @@ namespace MarieCurieTests.CommonPages
             action.MoveToElement(informationLabel).Build().Perform();
         }
 
-
+        
 
 
 

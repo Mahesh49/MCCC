@@ -3,7 +3,7 @@
 	As a user
 	I want to login into the system
 
-@mytag
+@wip
 Scenario Outline: Invali Login
 
 Given I am on OnlineShop page

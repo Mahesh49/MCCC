@@ -14,7 +14,7 @@ namespace MarieCurieTests.CommonPages
        public IWebDriver driver;
 
        [FindsBy(How = How.Id)]
-       [CacheLookup]     //keeps the element in driver cache
+       //[CacheLookup]     //keeps the element in driver cache
        private IWebElement Logo;  //Id=Logo ,Webelement name could be anything
 
        [FindsBy(How = How.Id,Using="shopping")]
