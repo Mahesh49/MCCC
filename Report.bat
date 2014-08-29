@@ -8,4 +8,3 @@ pause
 
 echo Created file TestResults.html
 
-//To filter using feature tags  /category:"wip"
