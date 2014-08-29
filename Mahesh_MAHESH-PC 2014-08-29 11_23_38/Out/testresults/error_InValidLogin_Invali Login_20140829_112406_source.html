@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_GB.npmNnU8aahk.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AItRSTOxryTUEh0YGv7yL2nJgDPzskR0Yg/cb=gapi.loaded_1" async=""></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_GB.npmNnU8aahk.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AItRSTOxryTUEh0YGv7yL2nJgDPzskR0Yg/cb=gapi.loaded_0" async=""></script><script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl1ux9Iq/www-widgetapi.js" async=""></script><script id="facebook-jssdk" src="//connect.facebook.net/en_GB/all.js#xfbml=1"></script><script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="//apis.google.com/js/plusone.js" gapi_processed="true"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5MQ8BQ"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://stats.g.doubleclick.net/dc.js"></script><script src="//www.youtube.com/iframe_api"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"beacon-2.newrelic.com","errorBeacon:":"bam.nr-data.net","licenseKey":"6951688511","applicationID":"3256168","transactionName":"YFJWZRYHCEpWVkBfXFkYdWI0SRBQUkJHGUNWUFFCSwoJXl5bRFdUUkFdVBNIB0pHTQ==","queueTime":"0","applicationTime":"109","ttGuid":"53FEC73F9CFAA444","agentToken":"","agent":"js-agent.newrelic.com/nr-411.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQMDWVVQGwACUVdTAQk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&amp;&amp;r.length||0,s=n[i]||(n[i]={}),u=0;a&gt;u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&amp;&amp;(t(1),t(2),"addEventListener"in window&amp;&amp;t(3),window.XMLHttpRequest&amp;&amp;XMLHttpRequest.prototype&amp;&amp;XMLHttpRequest.prototype.addEventListener&amp;&amp;t(4),s=!0)}i.on("fn-start",function(){s&amp;&amp;(u+=1)}),i.on("fn-err",function(t,e,r){s&amp;&amp;(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&amp;&amp;!this.thrown&amp;&amp;u&gt;0&amp;&amp;(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&amp;&amp;!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&amp;&amp;e(i);for(var a=XMLHttpRequest.prototype;a&amp;&amp;!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&amp;&amp;e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&amp;&amp;e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&amp;&amp;r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&amp;&amp;(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&amp;&amp;(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&amp;&amp;t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&amp;&amp;t instanceof ArrayBuffer&amp;&amp;t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&amp;&amp;t instanceof Blob&amp;&amp;t.size)return t.size;if("undefined"!=typeof FormData&amp;&amp;t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u&gt;i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&amp;&amp;(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&amp;&amp;(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&amp;&amp;"xpid"in NREUM.loader_config&amp;&amp;this.sameOrigin&amp;&amp;e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&amp;&amp;o){var d=e(o);d&amp;&amp;(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&amp;&amp;(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&amp;&amp;(i.onloadCalled||"function"!=typeof n.onload))&amp;&amp;i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u&gt;f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&amp;&amp;"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&amp;&amp;!this.xhrGuids[n]&amp;&amp;(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&amp;&amp;this.xhrGuids[n]&amp;&amp;(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&amp;&amp;"load"===t[0]&amp;&amp;a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&amp;&amp;"load"===t[0]&amp;&amp;a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&amp;&amp;("onload"===n&amp;&amp;(this.onload=!0),("load"===(t[0]&amp;&amp;t[0].type)||this.onload)&amp;&amp;(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&amp;&amp;a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&amp;&amp;XMLHttpRequest.prototype&amp;&amp;XMLHttpRequest.prototype.addEventListener&amp;&amp;!/CriOS/.test(navigator.userAgent)&amp;&amp;e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&amp;&amp;o[1]&amp;&amp;(r.port=o[1].split("/")[0].split(":")[1]),r.port&amp;&amp;"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&amp;&amp;(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&amp;&amp;e.port===n.port&amp;&amp;e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&amp;&amp;"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&amp;&amp;t.agent&amp;&amp;t.licenseKey&amp;&amp;t.applicationID&amp;&amp;u&amp;&amp;u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&amp;&amp;o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&amp;&amp;(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0&gt;o?0:o);++r&lt;o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&amp;&amp;r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u&lt;e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&amp;&amp;"function"==typeof t&amp;&amp;t.apply&amp;&amp;!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><link type="image/x-icon" href="/MasterPage/favicon.ico" rel="icon" /><meta content="" name="description" />
+	<meta content="" name="keywords" />
+	<meta content="INDEX, FOLLOW" name="robots" />
+	<title>Log in to your account | Marie Curie Cancer Care</title>
+    <meta content="Log in to your account | Marie Curie Cancer Care" name="og:title" />
+    <meta content="" name="og:description" />
+    <meta content="non_profit" name="og:type" />
+    <meta content="" name="og:image" />
+    <meta content="https://www.mariecurie.org.uk/en-GB/LogIn/" name="og:url" />
+    <meta content="Marie Curie Cancer Care" name="og:site_name" />
+    <meta content="9110034275" name="fb:admins" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/Master.css" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/colorbox.css" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/ContentPages.css" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/Forms.css" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/Panels.css" />
+        <link media="screen" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/cookiebanner.css" />
+        <link media="print" rel="stylesheet" type="text/css" href="https://www.mariecurie.org.uk/Styles/print.css" />
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="https://www.mariecurie.org.uk/Styles/specific/ie8.css" media="screen" />
+        <![endif]--><!--[if IE 7]>
+        <link rel="stylesheet" href="https://www.mariecurie.org.uk/Styles/specific/ie7.css" media="screen" />
+        <![endif]--><!--[if IE 6]>
+        <link rel="stylesheet" href="https://www.mariecurie.org.uk/Styles/specific/ie6.css" media="screen" />
+        <![endif]-->
+    
+        <script src="https://www.mariecurie.org.uk/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/jquery.colorbox-min.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/jquery.autocomplete.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/jquery.ajaxQueue.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/jquery.bgiframe.min.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/jquery.cookie.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/localdata.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/swfobject.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/general.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/gda-plugins.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/bgtp.js" language="javascript" type="text/javascript"></script>
+        <script src="https://www.mariecurie.org.uk/js/lunametrics-youtube-ua-v6.js" language="javascript" type="text/javascript"></script>
+    
+        <script src="https://www.google.com/jsapi" language="javascript" type="text/javascript"></script>
+        <script src="https://t.trackedlink.net/_dmpt.js" language="javascript" type="text/javascript"></script>
+    
+
+    <!--[if IE 6]>
+    <script src="/js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('img, input, div, li, span, a');
+      /* string argument can be any CSS selector */
+      /* .png_bg example is unnecessary */
+      /* change it to what suits you! */
+    </script>
+    <![endif]-->
+
+    
+<!--The code below is for GA asynchronous tracking--><script type="text/javascript"> var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-3424697-1']);_gaq.push(['_setDomainName', 'mariecurie.org.uk']);_gaq.push(['_trackPageview']);_gaq.push(['_setAllowLinker', true]);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-44637464-1', 'mariecurie.org.uk');ga('require', 'displayfeatures');ga('send', 'pageview');</script><!-- Start Visual Website Optimizer Asynchronous Code --><script type="text/javascript">var _vwo_code=(function(){var account_id=54447,settings_tolerance=2000,library_tolerance=2500,use_existing_jquery=false,/* DO NOT EDIT BELOW THIS LINE */f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&amp;u='+encodeURIComponent(d.URL)+'&amp;r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();</script><script src="//dev.visualwebsiteoptimizer.com/j.php?a=54447&amp;u=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-GB%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx&amp;r=0.8048963562999955" type="text/javascript"></script><!-- End Visual Website Optimizer Asynchronous Code --></head>
+<body class="page-35 template-login-page page-35 template-login-page hasJs" id="ctl00_pageBody" data-twttr-rendered="true"><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" style="padding-bottom: 42px; padding-right: 42px; display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; display: none;" class=""></div><div id="cboxLoadingOverlay" class="" style="display: none;"></div><div id="cboxLoadingGraphic" class="" style="display: none;"></div><div id="cboxTitle" class="" style="display: none;"></div><div id="cboxCurrent" class="" style="display: none;"></div><div id="cboxSlideshow" class="" style="display: none;"></div><div id="cboxNext" class="" style="display: none;"></div><div id="cboxPrevious" class="" style="display: none;"></div><div id="cboxClose" class="" style="display: none;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div></div>
+    <form id="aspnetForm" onsubmit="javascript:return WebForm_OnSubmit();" action="https://www.mariecurie.org.uk/en-GB/LogIn/?Return=http://shop.mariecurie.org.uk/default.aspx" method="post" name="aspnetForm">
+<div>
+<input type="hidden" value="" id="__EVENTTARGET" name="__EVENTTARGET" />
+<input type="hidden" value="" id="__EVENTARGUMENT" name="__EVENTARGUMENT" />
+<input type="hidden" value="/wEPDwUKMTI4NTE1NDYwNA9kFgJmD2QWBAIBEGRkFgpmDxYCHgRUZXh0ZWQCBA9kFhZmDxYCHwAFJjxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PSIiIC8+ZAICDxYCHwAFIzxtZXRhIG5hbWU9ImtleXdvcmRzIiBjb250ZW50PSIiIC8+ZAIEDxYCHwAFLjxtZXRhIG5hbWU9InJvYm90cyIgY29udGVudD0iSU5ERVgsIEZPTExPVyIgLz5kAgYPFgIfAAU/PHRpdGxlPkxvZyBpbiB0byB5b3VyIGFjY291bnQgfCBNYXJpZSBDdXJpZSBDYW5jZXIgQ2FyZTwvdGl0bGU+ZAIIDxYCHwAFUzxtZXRhIG5hbWU9Im9nOnRpdGxlIiBjb250ZW50PSJMb2cgaW4gdG8geW91ciBhY2NvdW50IHwgTWFyaWUgQ3VyaWUgQ2FuY2VyIENhcmUiIC8+ZAIKDxYCHwAFKTxtZXRhIG5hbWU9Im9nOmRlc2NyaXB0aW9uIiBjb250ZW50PSIiIC8+ZAIMDxYCHwAFLDxtZXRhIG5hbWU9Im9nOnR5cGUiIGNvbnRlbnQ9Im5vbl9wcm9maXQiIC8+ZAIODxYCHwAFIzxtZXRhIG5hbWU9Im9nOmltYWdlIiBjb250ZW50PSIiIC8+ZAIQDxYCHwAFSzxtZXRhIG5hbWU9Im9nOnVybCIgY29udGVudD0iaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvZW4tR0IvTG9nSW4vIiAvPmQCEg8WAh8ABT48bWV0YSBuYW1lPSJvZzpzaXRlX25hbWUiIGNvbnRlbnQ9Ik1hcmllIEN1cmllIENhbmNlciBDYXJlIiAvPmQCFA8WAh8ABS48bWV0YSBuYW1lPSJmYjphZG1pbnMiIGNvbnRlbnQ9IjkxMTAwMzQyNzUiIC8+ZAIFD2QWAmYPFQovaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvU3R5bGVzL01hc3Rlci5jc3MxaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvU3R5bGVzL2NvbG9yYm94LmNzczVodHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9TdHlsZXMvQ29udGVudFBhZ2VzLmNzcy5odHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9TdHlsZXMvRm9ybXMuY3NzL2h0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL1N0eWxlcy9QYW5lbHMuY3NzNWh0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL1N0eWxlcy9jb29raWViYW5uZXIuY3NzLmh0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL1N0eWxlcy9wcmludC5jc3M1aHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvU3R5bGVzL3NwZWNpZmljL2llOC5jc3M1aHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvU3R5bGVzL3NwZWNpZmljL2llNy5jc3M1aHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvU3R5bGVzL3NwZWNpZmljL2llNi5jc3NkAgYPZBYCZg8VDDRodHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9qcy9qcXVlcnktMS44LjMubWluLmpzN2h0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL2pzL2pxdWVyeS5jb2xvcmJveC1taW4uanM3aHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvanMvanF1ZXJ5LmF1dG9jb21wbGV0ZS5qczRodHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9qcy9qcXVlcnkuYWpheFF1ZXVlLmpzN2h0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL2pzL2pxdWVyeS5iZ2lmcmFtZS5taW4uanMxaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvanMvanF1ZXJ5LmNvb2tpZS5qcy1odHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9qcy9sb2NhbGRhdGEuanMtaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvanMvc3dmb2JqZWN0LmpzK2h0dHBzOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL2pzL2dlbmVyYWwuanMvaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvanMvZ2RhLXBsdWdpbnMuanMoaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvanMvYmd0cC5qcz1odHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9qcy9sdW5hbWV0cmljcy15b3V0dWJlLXVhLXY2LmpzZAIHD2QWAmYPFQIcaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9qc2FwaSJodHRwczovL3QudHJhY2tlZGxpbmsubmV0L19kbXB0LmpzZAIDDxYCHgVjbGFzcwU3cGFnZS0zNSB0ZW1wbGF0ZS1sb2dpbi1wYWdlIHBhZ2UtMzUgdGVtcGxhdGUtbG9naW4tcGFnZRYCAgEQZGQWEAIBD2QWBAIBD2QWAmYPZBYEAgEPFgIfAAWsAjxkaXY+DQoJV2UgdXNlIGNvb2tpZXMgdG8gZW5zdXJlIHRoYXQgeW91IGhhdmUgdGhlIGJlc3QgZXhwZXJpZW5jZSBvbiBvdXIgd2Vic2l0ZS4gSWYgeW91IGNvbnRpbnVlIGJyb3dzaW5nLDxiciAvPndlJ2xsIGFzc3VtZSB0aGF0IHlvdSBhcmUgaGFwcHkgdG8gcmVjZWl2ZSBhbGwgb3VyIGNvb2tpZXMuIFlvdSBjYW4gPGEgaHJlZj0iaHR0cDovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9lbi1nYi9jb29raWUtcG9saWN5Lz9UYWI9MiI+Y2hhbmdlIHlvdXIgY29va2llIHNldHRpbmdzPC9hPiBhdCBhbnkgdGltZS4NCjwvZGl2PmQCAw8PFgQfAAUNRmluZCBvdXQgbW9yZR4LTmF2aWdhdGVVcmwFMGh0dHA6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvZW4tZ2IvWW91ci1Qcml2YWN5L2RkAgMPZBYCZg8WAh4HVmlzaWJsZWhkAgIPZBYCZg9kFgICGw9kFgICAw8QZGQWAQIYZAIDD2QWAmYPFgIeCV9QYWdlTGluaygpbEVQaVNlcnZlci5Db3JlLlBhZ2VSZWZlcmVuY2UsIEVQaVNlcnZlciwgVmVyc2lvbj02LjEuMzc5LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGZlODNkZWE3MzhiNDViNwIyMBYQAgEPZBYCZg8VAjcvVmlld3MvUGFnZXMvSW5Zb3VyQXJlYS5hc3B4P2lkPTIwNjMwJmVwc2xhbmd1YWdlPWVuLUdCDEluIHlvdXIgYXJlYWQCAg9kFgJmDxUCPy9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0yMDcwMSZlcHNsYW5ndWFnZT1lbi1HQhtDb21taXNzaW9uZXJzIGFuZCByZWZlcnJlcnNkAgMPZBYCZg8VAj8vVmlld3MvUGFnZXMvR2VuZXJhbExhbmRpbmdQYWdlLmFzcHg/aWQ9MTc4MTgmZXBzbGFuZ3VhZ2U9ZW4tR0IIUmVzZWFyY2hkAgQPZBYCZg8VAj8vVmlld3MvUGFnZXMvR2VuZXJhbExhbmRpbmdQYWdlLmFzcHg/aWQ9MjAwNzcmZXBzbGFuZ3VhZ2U9ZW4tR0ISQ29ycG9yYXRlIHBhcnRuZXJzZAIFD2QWAmYPFQI2L1ZpZXdzL1BhZ2VzL1BsYWNlSG9sZGVyLmFzcHg/aWQ9OTA0JmVwc2xhbmd1YWdlPWVuLUdCBEpvYnNkAgYPZBYCZg8VAkovVmlld3MvTWVkaWFDZW50cmUvVGVtcGxhdGVzL1BhZ2VzL2RlZmF1bHQuYXNweD9pZD0yODY0MCZlcHNsYW5ndWFnZT1lbi1HQgVNZWRpYWQCBw9kFgJmDxUCPy9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0yODU2NSZlcHNsYW5ndWFnZT1lbi1HQgZQb2xpY3lkAggPZBYCZg8VAj4vdmlld3MvUGFnZXMvR2VuZXJhbENvbnRlbnRWaWV3LmFzcHg/aWQ9NDQxNyZlcHNsYW5ndWFnZT1lbi1HQgpDb250YWN0IHVzZAIFD2QWAmYPZBYCZg9kFgQCAQ8PFgQfAAUFTG9naW4fAgVxaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvZW4tR0IvTG9nSW4vP3JldHVybj0vZW4tR0IvTG9nSW4vP1JldHVybj1odHRwOi8vc2hvcC5tYXJpZWN1cmllLm9yZy51ay9kZWZhdWx0LmFzcHhkZAIDDw8WBB8ABQxSZWdpc3RyYXRpb24fAgUxaHR0cHM6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvZW4tR0IvUmVnaXN0cmF0aW9uL2RkAgcPZBYCZg8WAh8EKCsEATcWIAIBD2QWAmYPFQMIcGF0aWVudHM8L1ZpZXdzL1BhZ2VzL0dlbmVyYWxMYW5kaW5nUGFnZS5hc3B4P2lkPTExJmVwc2xhbmd1YWdlPWVuLUdCG1BhdGllbnRzLCBjYXJlcnMgJiBmYW1pbGllc2QCAg9kFgJmDxUDBm51cnNlczwvVmlld3MvUGFnZXMvR2VuZXJhbExhbmRpbmdQYWdlLmFzcHg/aWQ9MTImZXBzbGFuZ3VhZ2U9ZW4tR0IRTnVyc2VzICYgaG9zcGljZXNkAgMPZBYCZg8VAwZldmVudHM8L1ZpZXdzL1BhZ2VzL0dlbmVyYWxMYW5kaW5nUGFnZS5hc3B4P2lkPTEzJmVwc2xhbmd1YWdlPWVuLUdCBkV2ZW50c2QCBA9kFgJmDxUDC2Z1bmRyYWlzaW5nPC9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0xNCZlcHNsYW5ndWFnZT1lbi1HQhpGdW5kcmFpc2luZyAmIHZvbHVudGVlcmluZ2QCBQ9kFgJmDxUDCHNob3BwaW5nHWh0dHA6Ly9zaG9wLm1hcmllY3VyaWUub3JnLnVrC09ubGluZSBzaG9wZAIGD2QWAmYPFQMId2hvV2VBcmU9L1ZpZXdzL1BhZ2VzL0dlbmVyYWxMYW5kaW5nUGFnZS5hc3B4P2lkPTE2NiZlcHNsYW5ndWFnZT1lbi1HQgpXaG8gd2UgYXJlZAIHD2QWAmYPFQMFd2hlcmU8L3ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50Vmlldy5hc3B4P2lkPTE3JmVwc2xhbmd1YWdlPWVuLUdCFVdoZXJlIHlvdXIgbW9uZXkgZ29lc2QCCA9kFgJmDxUDBmRvbmF0ZTdodHRwOi8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL2VuLWdiL2RvbmF0ZS9Eb25hdGUtdG9kYXkvBkRvbmF0ZWQCCQ9kFgJmDxUDASA+L3ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50Vmlldy5hc3B4P2lkPTI1NzgmZXBzbGFuZ3VhZ2U9ZW4tR0INQWNjZXNzaWJpbGl0eWQCCg9kFgJmDxUDASBEL1ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50VGFiYmVkVmlldy5hc3B4P2lkPTI2MzUmZXBzbGFuZ3VhZ2U9ZW4tR0IMWW91ciBwcml2YWN5ZAILD2QWAmYPFQMBID4vdmlld3MvUGFnZXMvR2VuZXJhbENvbnRlbnRWaWV3LmFzcHg/aWQ9NDQxNyZlcHNsYW5ndWFnZT1lbi1HQgpDb250YWN0IHVzZAIMD2QWAmYPFQMBIEUvVmlld3MvUGFnZXMvR2VuZXJhbENvbnRlbnRUYWJiZWRWaWV3LmFzcHg/aWQ9MTk4MDYmZXBzbGFuZ3VhZ2U9ZW4tR0INQ29va2llIHBvbGljeWQCDQ9kFgJmDxUDASA0L1ZpZXdzL1BhZ2VzL1NpdGVNYXAuYXNweD9pZD0yMDk3MSZlcHNsYW5ndWFnZT1lbi1HQghTaXRlIE1hcGQCDg9kFgJmDxUDASBFL1ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50VGFiYmVkVmlldy5hc3B4P2lkPTE5NTU1JmVwc2xhbmd1YWdlPWVuLUdCGkZyZXF1ZW50bHkgQXNrZWQgUXVlc3Rpb25zZAIPD2QWAmYPFQMBID4vdmlld3MvUGFnZXMvR2VuZXJhbENvbnRlbnRWaWV3LmFzcHg/aWQ9MTY2NyZlcHNsYW5ndWFnZT1lbi1HQhRUZXJtcyBhbmQgY29uZGl0aW9uc2QCEA9kFgJmDxUDASA/L3ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50Vmlldy5hc3B4P2lkPTI5NzI2JmVwc2xhbmd1YWdlPWVuLUdCIVBheSBmb3IgYSBEYXkgRnVuZHJhaXNpbmcgQmFubmVyc2QCCA9kFgoCAw9kFgZmDw8WBh4NQWx0ZXJuYXRlVGV4dAUSTG9nIGluIG9yIHJlZ2lzdGVyHgdUb29sVGlwBRJMb2cgaW4gb3IgcmVnaXN0ZXIeCEltYWdlVXJsBRJMb2cgaW4gb3IgcmVnaXN0ZXJkZAICDxYCHwAFEkxvZyBpbiBvciByZWdpc3RlcmQCBA9kFgYCAQ8WAh8ABbwDPGRpdj4NCgk8cD5UbyBjb250aW51ZSBwbGVhc2UgZW50ZXIgeW91ciBsb2dpbiBkZXRhaWxzIGJlbG93LiBJZiB5b3UgZG8gbm90IHlldCBoYXZlIGFuIGFjY291bnQgd2l0aCBNYXJpZSBDdXJpZSBDYW5jZXIgQ2FyZSwgcGxlYXNlIHJlZ2lzdGVyIG5vdy48L3A+DQo8cD5JZiB5b3Ugd2FudCB0byBzZW5kIE1hcmllIEN1cmllIENoYXJpdHkgZUNhcmRzLCBwbGVhc2UgPGEgaHJlZj0iaHR0cDovL2VjYXJkcy5tYXJpZWN1cmllLm9yZy51ay9hY2NvdW50L3JlZ2lzdGVyIj5sb2cgaW4gdGhyb3VnaCBvdXIgZUNhcmRzIHdlYnNpdGU8L2E+LjwvcD4NCjxwPiZuYnNwOzwvcD4NCjxwIGNsYXNzPSJzdWJtaXQiPjxhIGhyZWY9Ii9WaWV3cy9QYWdlcy9SZWdpc3RyYXRpb24uYXNweD9pZD0zNiZhbXA7ZXBzbGFuZ3VhZ2U9ZW4tR0IiPlJlZ2lzdGVyIGhlcmU8L2E+PC9wPg0KPC9kaXY+ZAIPDw8WAh8ABVhZb3VyIHVzZXJuYW1lIGFuZCBwYXNzd29yZCBjb21iaW5hdGlvbiB3ZXJlIG5vdCBjb3JyZWN0LCBwbGVhc2UgY2hlY2sgYm90aCBhbmQgdHJ5IGFnYWluZGQCEQ8PFgQfAAUYRm9yZ290dGVuIHlvdXIgcGFzc3dvcmQ/HwIFMS8vd3d3Lm1hcmllY3VyaWUub3JnLnVrL2VuLUdCL0ZvcmdvdHRlbi1wYXNzd29yZC9kZAIFDxYCHwAFDVJlZ2lzdGVyIE5vdyFkAgcPDxYGHwUFDVJlZ2lzdGVyIE5vdyEfBgUNUmVnaXN0ZXIgTm93IR8HBRovR2xvYmFsL3JlZ2lzdGVyX2ltYWdlLmpwZ2RkAgkPFgIfAAW8AzxkaXY+DQoJPHA+VG8gY29udGludWUgcGxlYXNlIGVudGVyIHlvdXIgbG9naW4gZGV0YWlscyBiZWxvdy4gSWYgeW91IGRvIG5vdCB5ZXQgaGF2ZSBhbiBhY2NvdW50IHdpdGggTWFyaWUgQ3VyaWUgQ2FuY2VyIENhcmUsIHBsZWFzZSByZWdpc3RlciBub3cuPC9wPg0KPHA+SWYgeW91IHdhbnQgdG8gc2VuZCBNYXJpZSBDdXJpZSBDaGFyaXR5IGVDYXJkcywgcGxlYXNlIDxhIGhyZWY9Imh0dHA6Ly9lY2FyZHMubWFyaWVjdXJpZS5vcmcudWsvYWNjb3VudC9yZWdpc3RlciI+bG9nIGluIHRocm91Z2ggb3VyIGVDYXJkcyB3ZWJzaXRlPC9hPi48L3A+DQo8cD4mbmJzcDs8L3A+DQo8cCBjbGFzcz0ic3VibWl0Ij48YSBocmVmPSIvVmlld3MvUGFnZXMvUmVnaXN0cmF0aW9uLmFzcHg/aWQ9MzYmYW1wO2Vwc2xhbmd1YWdlPWVuLUdCIj5SZWdpc3RlciBoZXJlPC9hPjwvcD4NCjwvZGl2PmQCCw8PFgQfAAUTUmVnaXN0ZXIgbm93IGJ1dHRvbh8CBTFodHRwczovL3d3dy5tYXJpZWN1cmllLm9yZy51ay9lbi1HQi9SZWdpc3RyYXRpb24vFgIeB29uY2xpY2sFQGphdmFzY3JpcHQ6X2dhcS5wdXNoKFsnX3RyYWNrUGFnZXZpZXcnLCcvbG9nIGluL3JlZ2lzdHJhdGlvbiddKTtkAgsPZBYCZg8WAh8EKCsEAzQzMBYMZg9kFgRmDxUCPC9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0xMSZlcHNsYW5ndWFnZT1lbi1HQhtQYXRpZW50cywgY2FyZXJzICYgZmFtaWxpZXNkAgEPZBYCZg8WAh8EKCsEAzQ0MxYOAgIPZBYCAgEPDxYGHgtfaXNFZGl0YWJsZWgeDl9ib3VuZFBhZ2VMaW5rAusKHglfbGFzdFR5cGUFB0RlZmF1bHRkZAIFD2QWAgIBDw8WBh8JaB8KAuwKHwsFB0RlZmF1bHRkZAIID2QWAgIBDw8WBh8JaB8KAu0KHwsFB0RlZmF1bHRkZAILD2QWAgIBDw8WBh8JaB8KAu4KHwsFB0RlZmF1bHRkZAIOD2QWAgIBDw8WBh8JaB8KAv/YAR8LBQdEZWZhdWx0ZGQCEQ9kFgICAQ8PFgYfCWgfCgL8Ch8LBQdEZWZhdWx0ZGQCFA9kFgICAQ8PFgYfCWgfCgL9Ch8LBQdEZWZhdWx0ZGQCAQ9kFgRmDxUCPC9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0xMiZlcHNsYW5ndWFnZT1lbi1HQhFOdXJzZXMgJiBob3NwaWNlc2QCAQ9kFgJmDxYCHwQoKwQDNDQ0FgoCAg9kFgICAQ8PFgYfCWgfCgL+Ch8LBQdEZWZhdWx0ZGQCBQ9kFgICAQ8PFgYfCWgfCgL/Ch8LBQdEZWZhdWx0ZGQCCA9kFgICAQ8PFgYfCWgfCgKACx8LBQdEZWZhdWx0ZGQCCw9kFgICAQ8PFgYfCWgfCgKBCx8LBQdEZWZhdWx0ZGQCDg9kFgICAQ8PFgYfCWgfCgKDCx8LBQdEZWZhdWx0ZGQCAg9kFgRmDxUCPC9WaWV3cy9QYWdlcy9HZW5lcmFsTGFuZGluZ1BhZ2UuYXNweD9pZD0xMyZlcHNsYW5ndWFnZT1lbi1HQgZFdmVudHNkAgEPZBYCZg8WAh8EKCsEAzQ0NRYOAgIPZBYCAgEPDxYGHwloHwoCwQMfCwUHRGVmYXVsdGRkAgUPZBYCAgEPDxYGHwloHwoC6pgBHwsFB0RlZmF1bHRkZAIID2QWAgIBDw8WBh8JaB8KAsIDHwsFB0RlZmF1bHRkZAILD2QWAgIBDw8WBh8JaB8KAsMDHwsFB0RlZmF1bHRkZAIOD2QWAgIBDw8WBh8JaB8KAsUDHwsFB0RlZmF1bHRkZAIRD2QWAgIBDw8WBh8JaB8KAsYDHwsFB0RlZmF1bHRkZAIUD2QWAgIBDw8WBh8JaB8KAscDHwsFB0RlZmF1bHRkZAIDD2QWBGYPFQI8L1ZpZXdzL1BhZ2VzL0dlbmVyYWxMYW5kaW5nUGFnZS5hc3B4P2lkPTE0JmVwc2xhbmd1YWdlPWVuLUdCGkZ1bmRyYWlzaW5nICYgdm9sdW50ZWVyaW5nZAIBD2QWAmYPFgIfBCgrBAM0NDYWCgICD2QWAgIBDw8WBh8JaB8KAsgDHwsFB0RlZmF1bHRkZAIFD2QWAgIBDw8WBh8JaB8KAs0DHwsFB0RlZmF1bHRkZAIID2QWAgIBDw8WBh8JaB8KAsoDHwsFB0RlZmF1bHRkZAILD2QWAgIBDw8WBh8JaB8KAssDHwsFB0RlZmF1bHRkZAIOD2QWAgIBDw8WBh8JaB8KAswDHwsFB0RlZmF1bHRkZAIED2QWBGYPFQI5L1ZpZXdzL1BhZ2VzL0NhdGFsb2dQYWdlVmlldy5hc3B4P2lkPTE1JmVwc2xhbmd1YWdlPWVuLUdCCFNob3BwaW5nZAIBD2QWAmYPFgIfBCgrBAM0NDcWDgICD2QWAgIBDw8WBh8JaB8KAqkfHwsFB0RlZmF1bHRkZAIFD2QWAgIBDw8WBh8JaB8KAv2jAR8LBQdEZWZhdWx0ZGQCCA9kFgICAQ8PFgYfCWgfCgKsHx8LBQdEZWZhdWx0ZGQCCw9kFgICAQ8PFgYfCWgfCgKtHx8LBQdEZWZhdWx0ZGQCDg9kFgICAQ8PFgYfCWgfCgKoHx8LBQdEZWZhdWx0ZGQCEQ9kFgICAQ8PFgYfCWgfCgKrHx8LBQdEZWZhdWx0ZGQCFA9kFgICAQ8PFgYfCWgfCgLUAx8LBQdEZWZhdWx0ZGQCBQ9kFgRmDxUCOC9WaWV3cy9QYWdlcy9QbGFjZUhvbGRlci5hc3B4P2lkPTE4NzI5JmVwc2xhbmd1YWdlPWVuLUdCBkRvbmF0ZWQCAQ9kFgJmDxYCHwQoKwQDNDcwFgwCAg9kFgICAQ8PFgYfCWgfCgLdAx8LBQdEZWZhdWx0ZGQCBQ9kFgICAQ8PFgYfCWgfCgKuHx8LBQdEZWZhdWx0ZGQCCA9kFgICAQ8PFgYfCWgfCgLeAx8LBQdEZWZhdWx0ZGQCCw9kFgICAQ8PFgYfCWgfCgLfAx8LBQdEZWZhdWx0ZGQCDg9kFgICAQ8PFgYfCWgfCgLjAx8LBQdEZWZhdWx0ZGQCEQ9kFgICAQ8PFgYfCWgfCgKNIB8LBQdEZWZhdWx0ZGQCDA9kFgJmDxYCHwQoKwQCMjcWDgIBD2QWAmYPFQI+L3ZpZXdzL1BhZ2VzL0dlbmVyYWxDb250ZW50Vmlldy5hc3B4P2lkPTI1NzgmZXBzbGFuZ3VhZ2U9ZW4tR0INQWNjZXNzaWJpbGl0eWQCAw9kFgJmDxUCRS9WaWV3cy9QYWdlcy9HZW5lcmFsQ29udGVudFRhYmJlZFZpZXcuYXNweD9pZD0xOTU1NSZlcHNsYW5ndWFnZT1lbi1HQhpGcmVxdWVudGx5IGFza2VkIHF1ZXN0aW9uc2QCBQ9kFgJmDxUCPi92aWV3cy9QYWdlcy9HZW5lcmFsQ29udGVudFZpZXcuYXNweD9pZD00NDE3JmVwc2xhbmd1YWdlPWVuLUdCCkNvbnRhY3QgdXNkAgcPZBYCZg8VAkQvVmlld3MvUGFnZXMvR2VuZXJhbENvbnRlbnRUYWJiZWRWaWV3LmFzcHg/aWQ9MjYzNSZlcHNsYW5ndWFnZT1lbi1HQg5Qcml2YWN5IHBvbGljeWQCCQ9kFgJmDxUCNmh0dHA6Ly93d3cubWFyaWVjdXJpZS5vcmcudWsvZW4tZ2IvWW91ci1Qcml2YWN5Lz9UYWI9MxRUZXJtcyBhbmQgY29uZGl0aW9uc2QCCw9kFgJmDxUCRS9WaWV3cy9QYWdlcy9HZW5lcmFsQ29udGVudFRhYmJlZFZpZXcuYXNweD9pZD0xOTgwNiZlcHNsYW5ndWFnZT1lbi1HQg1Db29raWUgcG9saWN5ZAIND2QWAmYPFQI0L1ZpZXdzL1BhZ2VzL1NpdGVNYXAuYXNweD9pZD0yMDk3MSZlcHNsYW5ndWFnZT1lbi1HQghTaXRlIG1hcGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFHGN0bDAwJFNlYXJjaEJveCRTZWFyY2hCdXR0b27zFotH79mvkmLfJEjhn1h/7geIow==" id="__VIEWSTATE" name="__VIEWSTATE" />
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script type="text/javascript" src="/WebResource.axd?d=9yVr-znBdaG78AeIcu2f03pKmn-lGi-xIzblx3jzo9ZSQtFF2LQ7A7tuukrdWTrWCnCXBecYaqgP3hL1AcGddczpIzA1&amp;t=635295094417495136"></script>
+
+
+<script type="text/javascript" src="/WebResource.axd?d=TTENYcJlFs0twXsauMtBRgJeHW9gxt12iP15pWeGMgvRxGku-h4hejcqvrOlGSjIz574f_Nu1EXVwi0MvcgH4pKjazQ1&amp;t=635295094417495136"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" &amp;&amp; ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]&gt;
+</script>
+
+        
+
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-5MQ8BQ" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&amp;l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5MQ8BQ');</script>
+<!-- End Google Tag Manager -->
+        
+	        <div name="CookieBannerPanel" class="CookieBannerPanel" id="ctl00_PreMainContainerContent_CookieBannerControl_CookieBannerPanel">
+	
+    <div class="cbpBox clearfix">
+        <img class="cpbLeft" alt="Information icon" src="/Images/Master/info_icon.png" />
+        <div class="cpbMiddle">
+            <div>
+	We use cookies to ensure that you have the best experience on our website. If you continue browsing,<br />we'll assume that you are happy to receive all our cookies. You can <a href="http://www.mariecurie.org.uk/en-gb/cookie-policy/?Tab=2">change your cookie settings</a> at any time.
+</div>
+        </div>
+        <div class="cpbRight">
+            <a href="http://www.mariecurie.org.uk/en-gb/Your-Privacy/" id="ctl00_PreMainContainerContent_CookieBannerControl_CookieLink">Find out more</a>
+            <img alt="Arrow icon" src="/Images/Panels/arrow_cta.png" />
+        </div>
+    </div>
+
+</div>
+            
+        
+	    <div id="MainContainer"><a accesskey="s" href="#skip" class="s_n" style="position: absolute; text-indent: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">Skip to main content</a>
+	        <div>
+                
+            </div>
+            <div id="MainControl">
+                <div class="tiers clearfix">
+		            <div id="TopLinks">
+		                
+	<span class="OmniNavMenuBlock"></span>
+		<ul id="OmniNavMenu">
+	
+		<li><a href="https://www.mariecurie.org.uk/en-GB/In-Your-Area/">In your area</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Commissioners-and-referrers/">Commissioners and referrers</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/research/">Research</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/partnering/">Corporate partners</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/jobs/">Jobs</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Media/">Media</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Policy/">Policy</a></li>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/contact-us-supporter-services/">Contact us</a></li>
+	
+		</ul>
+	
+                    </div>
+                </div>
+                <div class="tiers clearfix">
+                    <div id="Search">
+                        <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_SearchBox_SearchButton')" id="ctl00_SearchBox_SearchPanel">
+	
+<img style="height:23px;width:44px;border-width:0px;" alt="Search" src="/Images/Master/SearchLabel.gif" class="topMargin" id="ctl00_SearchBox_Image1" />
+<input type="text" class="search SearchBox_SearchText" id="ctl00_SearchBox_SearchText" name="ctl00$SearchBox$SearchText" />
+<input type="image" style="height:16px;width:28px;border-width:0px;" alt="Go" src="/Images/Master/Btn_Go_Blue.gif" class="topMargin SearchBox_SearchButton" id="ctl00_SearchBox_SearchButton" name="ctl00$SearchBox$SearchButton" />
+
+</div>
+                    </div>
+                    <div id="LoginLinks">
+                        
+		<a href="https://www.mariecurie.org.uk/en-GB/LogIn/?return=/en-GB/LogIn/?Return=http://shop.mariecurie.org.uk/default.aspx" id="ctl00_LoginStatus_LoggedInStatus_LoginLink"><img style="border-width:0px;" alt="Login" src="/Images/Master/Btn_Login.gif" /></a>
+		<span class="tempHide"><a href="https://www.mariecurie.org.uk/en-GB/Registration/" id="ctl00_LoginStatus_LoggedInStatus_RegistrationLink"><img style="border-width:0px;" alt="Registration" src="/Images/Master/Btn_Register.gif" /></a></span>
+	
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="Logo">
+                <a href="/" title="Marie Curie Cancer Care homepage"><span></span>Marie Curie Cancer Care</a>
+            </div>
+            <div id="MainMenu">
+                
+		<ul id="Menu">
+	
+		<li id="patients"><a href="http://www.mariecurie.org.uk/en-GB/patients-carers/">Patients, carers &amp; families</a></li>
+	
+		<li id="nurses"><a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/">Nurses &amp; hospices</a></li>
+	
+		<li id="events"><a href="http://www.mariecurie.org.uk/en-GB/events/">Events</a></li>
+	
+		<li id="fundraising"><a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/">Fundraising &amp; volunteering</a></li>
+	
+		<li id="shopping"><a href="http://shop.mariecurie.org.uk">Online shop</a></li>
+	
+		<li id="whoWeAre"><a href="http://www.mariecurie.org.uk/en-GB/who-we-are/">Who we are</a></li>
+	
+		<li id="where"><a href="http://www.mariecurie.org.uk/en-GB/your-money/">Where your money goes</a></li>
+	
+		<li id="donate"><a href="http://www.mariecurie.org.uk/en-gb/donate/Donate-today/">Donate</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/Accessibility/">Accessibility</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/Your-Privacy/">Your privacy</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/contact-us-supporter-services/">Contact us</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/cookie-policy/">Cookie policy</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/Site-Map/">Site Map</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/frequently-asked-questions/">Frequently Asked Questions</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/t-and-c/">Terms and conditions</a></li>
+	
+		<li id=" "><a href="http://www.mariecurie.org.uk/en-GB/pay-for-a-day-wm-fundraising/">Pay for a Day Fundraising Banners</a></li>
+	
+		</ul>
+	
+    
+
+            </div>
+            <div class="clearfix" id="MainContent">
+	            
+
+	<div id="Layout1Left">
+        
+    </div>
+    <div style="margin-left : 241px;" id="Layout1Right">
+		<div id="BreadCrumb"><span>You are here: </span><a href="http://www.mariecurie.org.uk/en-GB/">Home</a><span>&gt;</span><span class="page">Log in</span></div>
+    
+		<img style="height:225px;width:226px;border-width:0px;" alt="Log in or register" src="/Views/Controls/Log%20in%20or%20register" class="loginleftImage tempHide" title="Log in or register" id="ctl00_MainContent_LoginBox_LoginLeftImage" />
+    <div class="pageHeadingNoWrap"><h1><a name="skip"></a><span>Log in or register</span></h1></div>
+    <div class="clear"></div>
+    <div class="pageMainContent"> 
+    <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_MainContent_LoginBox_LoginButton')" id="ctl00_MainContent_LoginBox_Fat">
+	
+    <div>
+	<p>To continue please enter your login details below. If you do not yet have an account with Marie Curie Cancer Care, please register now.</p>
+<p>If you want to send Marie Curie Charity eCards, please <a href="http://ecards.mariecurie.org.uk/account/register">log in through our eCards website</a>.</p>
+<p> </p>
+<p class="submit"><a href="https://www.mariecurie.org.uk/en-GB/Registration/">Register here</a></p>
+</div>
+		<div class="formContainer">
+        <p class="indicates"><span>*</span> indicates required information</p>        
+        
+			<fieldset class="final">
+				<div class="formwrap">
+					<div class="columnLeft">
+					<label id="ctl00_MainContent_LoginBox_EmailAddressLabel" for="ctl00_MainContent_LoginBox_EmailTextBox">Email address: <span>*</span></label>
+					</div>
+					<div class="columnRight">
+					<input type="text" class="inputMedium" id="ctl00_MainContent_LoginBox_EmailTextBox" value="abc@gmail.com" name="ctl00$MainContent$LoginBox$EmailTextBox" />
+					<div class="clearfix"><span style="color:Red;display:none;" id="ctl00_MainContent_LoginBox_EmailRequiredFieldValidator">Email address is required</span></div>
+					</div>
+				</div>
+
+				<div class="formwrap">
+					<div class="columnLeft">
+					<label id="ctl00_MainContent_LoginBox_PasswordLabel" for="ctl00_MainContent_LoginBox_PasswordTextBox">Password: <span>*</span></label>            
+					</div>
+					<div class="columnRight">
+					<input type="password" class="inputMedium" id="ctl00_MainContent_LoginBox_PasswordTextBox" name="ctl00$MainContent$LoginBox$PasswordTextBox" />           
+					<div class="clearfix"><span style="color:Red;display:none;" id="ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator">Password is required</span></div>
+					<div class="clearfix"><span id="ctl00_MainContent_LoginBox_ValidationMessageLabel">Your username and password combination were not correct, please check both and try again</span>
+					<p class="indicates"><a href="//www.mariecurie.org.uk/en-GB/Forgotten-password/" id="ctl00_MainContent_LoginBox_ForgotPasswordLink">Forgotten your password?</a></p></div>
+					
+                    
+					</div>
+				</div>
+				<div class="formwrap">
+					<div class="columnFull">
+					<input type="submit" class="submit" id="ctl00_MainContent_LoginBox_LoginButton" onclick="javascript:_gaq.push(['_trackEvent','Login-Page','Login']);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$LoginBox$LoginButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" value="Log in" name="ctl00$MainContent$LoginBox$LoginButton" />
+					</div>
+				</div>
+			</fieldset>
+			</div>
+        
+</div>
+  </div>
+        
+<div class="pageMainContentBottom"></div>	
+
+		
+    </div>
+    
+
+
+<div class="tempHide" id="Layout2Right">
+    <h1><span>Register Now!</span></h1>
+    <div class="clear5"></div>
+    <div class="repeater">
+        <div class="top"></div>
+        <img style="height:145px;width:358px;border-width:0px;" alt="Register Now!" src="/Global/register_image.jpg" title="Register Now!" id="ctl00_MainContent_RegistrationRightImage" />
+        <div class="content">        
+            <div>
+	<p>To continue please enter your login details below. If you do not yet have an account with Marie Curie Cancer Care, please register now.</p>
+<p>If you want to send Marie Curie Charity eCards, please <a href="http://ecards.mariecurie.org.uk/account/register">log in through our eCards website</a>.</p>
+<p> </p>
+<p class="submit"><a href="https://www.mariecurie.org.uk/en-GB/Registration/">Register here</a></p>
+</div>
+            <br />
+            <a href="https://www.mariecurie.org.uk/en-GB/Registration/" onclick="javascript:_gaq.push(['_trackPageview','/log in/registration']);" class="right" id="ctl00_MainContent_RegisterHyperLink"><img style="border-width:0px;" alt="Register now button" src="/Images/Forms/BTN_Register_Now.gif" /></a>
+        </div>        
+        <div class="bottom"></div>
+    </div>
+</div>
+
+                
+	                <script type="text/javascript">
+	                    function ReplaceAll(data, stringToFind, stringToReplace) {
+	                        var temp = data;
+	                        var index = temp.indexOf(stringToFind);
+	                        while (index != -1) {
+	                            temp = temp.replace(stringToFind, stringToReplace);
+	                            index = temp.indexOf(stringToFind);
+	                        }
+	                        return temp;
+	                    }
+	                    //Inject JQuery
+	                    //Filter all http and https requests
+	                    //Filter if the site links to host domain
+	                    //Bind the click event and inject analytic tag
+	                    $(document).ready(function () {
+
+	                        //redirect to search page
+	                        $('.SearchBox_SearchButton').click(function (event) {
+	                            if ($('.SearchBox_SearchText').val() != "") {
+	                                //cater for localhost version
+	                                if (location.hostname.indexOf('localhost') != -1) {
+	                                    window.location = "/cms/Marie-Curie-Search?searchstr=" + $('.SearchBox_SearchText').val();
+	                                }
+	                                else {
+	                                    window.location = "/Marie-Curie-Search?searchstr=" + $('.SearchBox_SearchText').val();
+	                                }
+	                            }
+
+	                            // don’t process form submission
+	                            event.preventDefault();
+	                        });
+
+	                        //apply google tag to external hyperlinks including pdfs and docs
+	                        //and to internal download links including those in sub-domains
+	                        //**************************************
+	                        var filetypes = /\.(zip|exe|pdf|docx?|xlsx?|pptx?|mp3)$/i;
+
+	                        $('a').each(function () {
+	                            try {
+	                                var href = $(this).attr('href');
+
+	                                if (href == undefined || href == '') return;
+
+	                                if ((href.match(/^https?\:/i)) &amp;&amp; (!href.match(/^https?\:\/\/(([^.]+)\.)?mariecurie\.org\.uk/i)) &amp;&amp; (!href.match(/^https?\:\/\/#\$\$/i))) {
+	                                    $(this).click(function () {
+	                                        var buildUrl = '/external/' + href.replace(/^https?\:\/\//i, '');
+	                                        _gaq.push(['_trackPageview', buildUrl.toLowerCase()]);
+	                                    });
+	                                } else if (href.match(filetypes)) {
+	                                    $(this).click(function () {
+	                                        var buildUrl = href.substr(0, 1) == "/" ? href.substr(1) : href.replace(/^https?\:\/\//i, '');
+	                                        buildUrl = '/download/' + buildUrl;
+	                                        var filePath = ReplaceAll(buildUrl, '_', '-');
+	                                        filePath = ReplaceAll(filePath, '%20', '-');
+	                                        _gaq.push(['_trackPageview', filePath.toLowerCase()]);
+	                                    });
+	                                }
+	                            } catch (err) { }
+	                        });
+
+	                        //MSP panel click tracking
+	                        $('a[href^="http://#$$"]').click(function () {
+	                            var buildUrl = this.href.split('$$');
+	                            _gaq.push(['_trackEvent', 'MSP Tab', 'MSP Tab click',  buildUrl]);
+	                        });
+
+	                    });
+                    </script>
+                
+	            <div class="clear5"></div>
+            </div>
+            
+                <div id="ShareThis">
+                    
+    
+    <!-- Google plus 1 button script -->
+    <script type="text/javascript">
+        window.___gcfg = { lang: 'en-GB' };
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = '//apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+    <!-- End Google plus 1 button script -->
+    
+    <!-- Twitter button script -->
+    <script type="text/javascript">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        } (document, "script", "twitter-wjs"));
+    </script>
+    <!-- End Twitter button script -->
+    
+    <!-- Facebook Like button script -->
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe frameborder="0" name="fb_xdm_frame_https" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter/W2xi4Tmu0YA.js?version=41#channel=f96f5d2b3df94&amp;origin=https%3A%2F%2Fwww.mariecurie.org.uk"></iframe></div></div></div>
+    <script type="text/javascript">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End Facebook Like button script -->
+    
+    <div style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;" id="___plusone_0"><iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1409307846099" name="I0_1409307846099" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;hl=en-GB&amp;origin=https%3A%2F%2Fwww.mariecurie.org.uk&amp;url=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-GB%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_GB.npmNnU8aahk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAItRSTOxryTUEh0YGv7yL2nJgDPzskR0Yg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1409307846099&amp;parent=https%3A%2F%2Fwww.mariecurie.org.uk&amp;pfname=&amp;rpctoken=36367472" data-gapiattached="true" title="+1"></iframe></div>
+    
+    <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/tweet_button.1409007440.html#_=1409307846063&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-GB%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx&amp;size=m&amp;text=Log%20in%20to%20your%20account%20%7C%20Marie%20Curie%20Cancer%20Care&amp;url=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-GB%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx&amp;via=mariecurieuk" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 109px; height: 20px;"></iframe>
+
+    <div data-show-faces="true" data-width="85" data-layout="button_count" data-send="false" class="fb-like"></div>
+    
+    <div class="clear10"></div>
+
+
+                </div>
+            
+            <div id="Footer">
+                <div id="SiteMap">
+                    <span id="siteClick"> <a class="toggleLink" href="javascript:;"><span class="arrowDown">Find your way around</span></a></span>
+                    <div id="SiteMapMenu">
+                        
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/patients-carers/">Patients, carers &amp; families</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/for-patients/">Support for patients</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/for-patients/your-care/">Key people in your care</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/for-carers/help-for-carers/">Practical help for carers</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/palliative-care-terms/">A-Z of your care</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/Tell-us-what-you-think/">Tell us what you think</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/patients-carers/for-carers/supporting-children/">Supporting children</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/nursing-in-your-home/get-a-marie-curie-nurse/">Getting a Marie Curie Nurse</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/">Nurses &amp; hospices</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/nursing-in-your-home/">Home nursing</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/nursing-in-your-home/meet-our-nurses-films/">Meet our nurses</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/nursing-in-your-home/how-we-work-films/">How our nurses work</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/hospice-care/">Hospice care</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/nurses-hospices/our-hospices/">Find your local hospice</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/events/">Events</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/running/">Running</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/walking/">Walking</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/cycling/">Cycling</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/corporate-events/">Corporate events</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/overseas-charity-challenge/">Overseas challenges</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/uk-mountain-challenges/">UK mountain challenges</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/events/Special-events/">Special events</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/">Fundraising &amp; volunteering</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/fundraising/">Fundraising ideas</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/Get-our-fundraising-pack/">Fundraising pack</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/volunteer/">Volunteering</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/schools/">Schools &amp; young people</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/schools/students/">Student fundraising</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/shopping/">Shopping</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="http://ecards.mariecurie.org.uk/">eCards</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://cardshop.mariecurie.org.uk/">Personalised cards</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://shop.mariecurie.org.uk/category/86-gifts-for-her.aspx">Gifts for her</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://shop.mariecurie.org.uk/category/90-gifts-for-him.aspx">Gifts for him</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://shop.mariecurie.org.uk/category/89-home-garden.aspx">Home and Garden</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://shop.mariecurie.org.uk/category/99-parcels-of-care.aspx">Parcels of care</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a target="_top" href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/Marie-Curie-Shops/">Marie Curie Shops</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+		<ul class="MainMenuItem">
+			<li><a href="http://www.mariecurie.org.uk/en-GB/donate/">Donate</a></li>
+			
+     <li>
+		<ul class="SubmenuItem">
+     
+       <li>
+      
+		 <a href="https://www.mariecurie.org.uk/en-GB/donate/donatenow/">Make a donation</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="https://www.mariecurie.org.uk/en-gb/donate/directdebit/">Set up a direct debit</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/donate/charity-will-legacy/">A gift in your Will</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/donate/in-memory-giving/">Donate in memory</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/your-money/">Where your money goes</a>
+      
+        </li>
+      
+       <li>
+      
+		 <a href="http://www.mariecurie.org.uk/en-GB/fundraising-volunteering/fundraising-standards-board/">Our fundraising promise</a>
+      
+        </li>
+      
+		</ul>
+       </li>
+      
+ 
+		</ul>
+		
+	
+
+                    </div>
+                </div>
+                <div id="FooterContent">
+                    
+		<ul>
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Accessibility/">Accessibility</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/frequently-asked-questions/">Frequently asked questions</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/contact-us-supporter-services/">Contact us</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Your-Privacy/">Privacy policy</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-gb/Your-Privacy/?Tab=3">Terms and conditions</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/cookie-policy/">Cookie policy</a></li>
+	
+	
+		<li><a href="http://www.mariecurie.org.uk/en-GB/Site-Map/">Site map</a></li>
+	
+		</ul>
+	
+                    <p>©2014 Marie Curie Cancer Care - Registered in England and Wales with Charity Reg No. 207994 and in Scotland with Charity Reg No. SC038731</p>
+                </div>
+                <script src="https://dnn506yrbagrg.cloudfront.net/pages/scripts/0008/6984.js" type="text/javascript"></script>
+                
+<div id="totaltagdiv"><iframe src="//d21j20wsoewvjq.cloudfront.net/tt-298680c6e3eb9b81d497a1cc3bf02d180e0d5db2f4479a7b8740f8bf077831ca/12744/global.html?httpReferrer=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-gb%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx&amp;httpLocation=https%3A%2F%2Fwww.mariecurie.org.uk%2Fen-GB%2FLogIn%2F%3FReturn%3Dhttp%3A%2F%2Fshop.mariecurie.org.uk%2Fdefault.aspx" style="display: none;"></iframe></div><script src="https://d21j20wsoewvjq.cloudfront.net/tt-298680c6e3eb9b81d497a1cc3bf02d180e0d5db2f4479a7b8740f8bf077831ca.js"></script>
+
+                
+
+<!-- Google Code for Entire site remarketing list -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* &lt;![CDATA[ */
+var google_conversion_id = 1012280194;
+var google_conversion_label = "j2PSCLaSvwMQgtfY4gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]&gt; */
+</script>
+<script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript"></script><iframe width="300" height="13" frameborder="0" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1012280194/?random=1409307845662&amp;cv=7&amp;fst=1409307845662&amp;num=1&amp;fmt=1&amp;label=j2PSCLaSvwMQgtfY4gM&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=60&amp;u_java=true&amp;u_nplug=15&amp;u_nmime=110&amp;frm=0&amp;url=https%3A//www.mariecurie.org.uk/en-GB/LogIn/%3FReturn%3Dhttp%3A//shop.mariecurie.org.uk/default.aspx&amp;ref=https%3A//www.mariecurie.org.uk/en-gb/LogIn/%3FReturn%3Dhttp%3A//shop.mariecurie.org.uk/default.aspx" title="Google conversion frame" name="google_conversion_frame">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1012280194/?frame=0&amp;random=1409307845662&amp;cv=7&amp;fst=1409307845662&amp;num=1&amp;fmt=1&amp;label=j2PSCLaSvwMQgtfY4gM&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=60&amp;u_java=true&amp;u_nplug=15&amp;u_nmime=110&amp;frm=0&amp;url=https%3A//www.mariecurie.org.uk/en-GB/LogIn/%3FReturn%3Dhttp%3A//shop.mariecurie.org.uk/default.aspx&amp;ref=https%3A//www.mariecurie.org.uk/en-gb/LogIn/%3FReturn%3Dhttp%3A//shop.mariecurie.org.uk/default.aspx" /&gt;</iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1012280194/?value=0&amp;amp;label=j2PSCLaSvwMQgtfY4gM&amp;amp;guid=ON&amp;amp;script=0" /&gt;
+&lt;/div&gt;
+</noscript>
+
+            </div>
+        </div>
+    
+<script type="text/javascript">
+//&lt;![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_MainContent_LoginBox_EmailRequiredFieldValidator"), document.getElementById("ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator"));
+//]]&gt;
+</script>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var ctl00_MainContent_LoginBox_EmailRequiredFieldValidator = document.all ? document.all["ctl00_MainContent_LoginBox_EmailRequiredFieldValidator"] : document.getElementById("ctl00_MainContent_LoginBox_EmailRequiredFieldValidator");
+ctl00_MainContent_LoginBox_EmailRequiredFieldValidator.controltovalidate = "ctl00_MainContent_LoginBox_EmailTextBox";
+ctl00_MainContent_LoginBox_EmailRequiredFieldValidator.errormessage = "Email address is required";
+ctl00_MainContent_LoginBox_EmailRequiredFieldValidator.display = "Dynamic";
+ctl00_MainContent_LoginBox_EmailRequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_LoginBox_EmailRequiredFieldValidator.initialvalue = "";
+var ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator = document.all ? document.all["ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator"] : document.getElementById("ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator");
+ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator.controltovalidate = "ctl00_MainContent_LoginBox_PasswordTextBox";
+ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator.errormessage = "Password is required";
+ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator.display = "Dynamic";
+ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_LoginBox_PasswordRequiredFieldValidator.initialvalue = "";
+//]]&gt;
+</script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]&gt;
+</script>
+</form>
+
+<iframe name="oauth2relay1887854630" id="oauth2relay1887854630" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fwww.mariecurie.org.uk#rpctoken=414222522&amp;forcesecure=1" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1"></iframe></body></html>
